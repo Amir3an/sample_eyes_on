@@ -19,7 +19,6 @@ export default {
   width: 100%;
   background: rgba(0, 0, 12, 1);
   font-family: Barlow;
-  color: white;
 }
 #app {
   width: 90%;
