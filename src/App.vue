@@ -19,8 +19,9 @@ body {
   background: rgba(0, 0, 12, 1);
 }
 #app {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  font-family: Barlow;
+  font-family: Bangla Sangam MN ;
+  margin : auto;
 }
 </style>
