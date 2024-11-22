@@ -1,9 +1,10 @@
 <template>
-  <div><p>EyesOn</p></div>
+  <div class="w-[100%] h-10 bg-red-500 flex">
+    <p class="text-white">EyesOn</p>
+  </div>
 </template>
 
 <script>
-export default {};
 </script>
 
 <style></style>
