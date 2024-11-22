@@ -15,15 +15,12 @@ export default {
 </script>
 
 <style>
-.app {
-  width: 100%;
+body {
   background: rgba(0, 0, 12, 1);
-  font-family: Barlow;
-  margin : 0;
-  padding : 0;
 }
 #app {
-  width: 90%;
-  height : 100%;
+  width: 100%;
+  height: 100%;
+  font-family: Barlow;
 }
 </style>
