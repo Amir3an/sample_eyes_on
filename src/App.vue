@@ -17,9 +17,7 @@ export default {
 <style>
 .app {
   width: 100%;
-  height: 100vh;
   background: rgba(0, 0, 12, 1);
-  margin: auto;
   font-family: Barlow;
   color: white;
 }

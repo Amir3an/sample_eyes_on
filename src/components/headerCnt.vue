@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div><p>EyesOn</p></div>
 </template>
 
 <script>
