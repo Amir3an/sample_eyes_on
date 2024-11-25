@@ -1,6 +1,6 @@
 <template>
-  <div class="w-[80%] m-auto">
-    <div id="gradiant">
+  <div class="w-[80%] flex m-auto">
+    <div>
       <h2
         class="text-white text-5xl font-bold m-auto w-[100%]"
         id="cnt"
@@ -12,16 +12,26 @@
       </h2>
     </div>
 
-    <div class="flex items-center justify-between w-[532px]">
-      <p
-        class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-      ></p>
-      <p
-        class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-      ></p>
-      <p
-        class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-      ></p>
+    <div>
+      <div class="w-[532px] flex items-center justify-between">
+        <p
+          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+        ></p>
+        <p
+          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+        ></p>
+        <p
+          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+        ></p>
+      </div>
+      <div class="w-[344px] mt-8 flex items-center justify-between">
+        <p
+          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+        ></p>
+        <p
+          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+        ></p>
+      </div>
     </div>
   </div>
 </template>
