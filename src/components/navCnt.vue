@@ -2,7 +2,7 @@
   <div class="w-[80%] m-auto">
     <div id="gradiant">
       <h2
-        class="text-white text-5xl font-bold m-auto w-[80%]"
+        class="text-white text-5xl font-bold m-auto w-[100%]"
         id="cnt"
         ref="observeItem"
         :class="{ visible: isVisible }"
@@ -12,7 +12,17 @@
       </h2>
     </div>
 
-    <p class="w-[156px] h-[154px] bg-[#70F9E01A] blur-[10px] rounded-2xl"></p>
+    <div class="flex items-center justify-between w-[532px]">
+      <p
+        class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+      ></p>
+      <p
+        class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+      ></p>
+      <p
+        class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+      ></p>
+    </div>
   </div>
 </template>
 <script>
