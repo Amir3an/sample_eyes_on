@@ -15,6 +15,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: BanglaSanga;
+  src: url("./assets/fonts/BanglaSangaMN.ttf");
+}
+
 body {
   background: rgba(0, 0, 12, 1);
 }
