@@ -24,13 +24,28 @@ export default {
   src: url("./assets/fonts/Barlow-Regular.ttf");
 }
 
-body {
-  background-color: rgba(0, 0, 12, 1);
-}
 #app {
   width: 100%;
   height: 100%;
   font-family: Bangla Sangam MN;
   margin: auto;
+}
+
+body {
+  background-color: rgba(0, 0, 12, 1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
 </style>
