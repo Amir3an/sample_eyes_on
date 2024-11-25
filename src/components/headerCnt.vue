@@ -23,4 +23,8 @@
 div {
   font-family: BanglaSanga;
 }
+
+ul li a {
+  font-family: BarlowRegula;
+}
 </style>
