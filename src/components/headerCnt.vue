@@ -4,13 +4,13 @@
     src="../assets/img/1.png"
   />
   <div
-    class="w-[90%] absolute left-[5%] top-12 flex items-center justify-between h-10 bg-red-300"
+    class="w-[90%] absolute left-[5%] top-12 flex items-center justify-between h-10"
   >
     <p class="text-white text-xl">EyesOn</p>
-    <ul class="flex w-72 justify-between bg-green-500">
-      <li><a class="text-xl text-[#FFFFFF]">Home</a></li>
-      <li><a class="text-xl text-[#FFFFFF]">Services</a></li>
-      <li><a class="text-xl text-[#FFFFFF]">Portfolio</a></li>
+    <ul class="flex w-72 justify-between0">
+      <li><a class="text-xl font-normal text-[#FFFFFF]">Home</a></li>
+      <li><a class="text-xl font-normal text-[#FFFFFF]">Services</a></li>
+      <li><a class="text-xl font-normal text-[#FFFFFF]">Portfolio</a></li>
     </ul>
 
     <p class="text-[#F1EDBA]">Motion Graphics</p>
