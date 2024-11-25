@@ -1,6 +1,5 @@
 <template>
-  <img class="w-full h-full" src="../assets/img/1.png" />
-  <div id="pic" class="w-[100%] m-auto h-full flex">
+  <div id="pic" class="w-[100%] m-auto h-[1100px] flex">
     <ul class="w-[100%] flex h-10">
       <p class="text-white text-xl">EyesOn</p>
       <a class="text-xl text-[#FFFFFF]">Home</a>
@@ -16,6 +15,8 @@
 <style scoped>
 #pic {
   background: url("../assets/img/1.png") center no-repeat;
+  background-size: center;
+  object-fit: cover;
 }
 div {
   font-family: BanglaSanga;
