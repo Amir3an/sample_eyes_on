@@ -7,7 +7,7 @@
     class="w-[90%] absolute left-[5%] top-12 flex items-center justify-between h-10 bg-red-300"
   >
     <p class="text-white text-xl">EyesOn</p>
-    <ul class="w-20 flex">
+    <ul class="flex w-72 justify-between bg-green-500">
       <li><a class="text-xl text-[#FFFFFF]">Home</a></li>
       <li><a class="text-xl text-[#FFFFFF]">Services</a></li>
       <li><a class="text-xl text-[#FFFFFF]">Portfolio</a></li>
