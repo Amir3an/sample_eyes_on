@@ -17,7 +17,11 @@ export default {
 <style>
 @font-face {
   font-family: BanglaSanga;
-  src: url("./assets/fonts/BanglaSangaMN.ttf");
+  src: url("./assets/fonts/Bangla-Sanga.ttf");
+}
+@font-face {
+  font-family: BarlowRegula;
+  src: url("./assets/fonts/Barlow-Regular.ttf");
 }
 
 body {
