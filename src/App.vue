@@ -2,7 +2,7 @@
   <header>
     <headerCnt />
   </header>
-  <nav>
+  <nav class="mt-[20%]">
     <navCnt />
   </nav>
 </template>
