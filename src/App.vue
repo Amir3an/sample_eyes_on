@@ -21,7 +21,8 @@ export default {
 }
 
 body {
-  background: rgba(0, 0, 12, 1);
+  /* background: rgba(0, 0, 12, 1); */
+  background: rgb(207, 207, 207);
 }
 #app {
   width: 90%;
