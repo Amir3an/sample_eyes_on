@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-white text-5xl">What is our mission</h2>
+  <h2 class="text-white text-5xl font-bold">What is our mission</h2>
 </template>
 
 <script>
