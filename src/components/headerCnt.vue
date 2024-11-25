@@ -7,10 +7,20 @@
     class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10"
   >
     <p class="text-white text-xl">EyesOn</p>
-    <ul class="flex w-[395px] justify-between">
-      <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a></li>
-      <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Services</a></li>
-      <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Portfolio</a></li>
+    <ul class="flex w-[395px] justify-between bg-red-200">
+      <li>
+        <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
+      </li>
+      <li>
+        <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
+          >Portfolio</a
+        >
+      </li>
     </ul>
 
     <p class="text-[#F1EDBA]">Motion Graphics</p>
