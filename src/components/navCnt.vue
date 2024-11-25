@@ -2,7 +2,7 @@
   <div class="w-[80%] flex m-auto">
     <div>
       <h2
-        class="text-white text-5xl font-bold m-auto w-[100%]"
+        class="text-white text-5xl font-bold w-[100%]"
         id="cnt"
         ref="observeItem"
         :class="{ visible: isVisible }"
@@ -77,6 +77,8 @@ export default {
 
 <style scoepd>
 h2 {
+  margin-top: -79px;
+  margin-right: 15px;
   font-family: BarlowRegula;
 }
 
