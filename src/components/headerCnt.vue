@@ -6,7 +6,7 @@
       <a class="text-xl text-[#FFFFFF]">Home</a>
       <a class="text-xl text-[#FFFFFF]">Services</a>
       <a class="text-xl text-[#FFFFFF]">Portfolio</a>
-      <p class="text-[#F1EDBA]">Motion design</p>
+      <p class="text-[#F1EDBA]">Motion Graphics</p>
     </ul>
   </div>
 </template>
