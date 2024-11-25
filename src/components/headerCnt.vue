@@ -5,6 +5,7 @@
   />
   <div
     id="cnt"
+    ref="observeItem"
     :class="{ visible: isVisible }"
     class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10"
   >
@@ -70,7 +71,7 @@ export default {
 </script>
 <style scoped>
 #cnt {
-  transition: transform 2s, opacity 3s;
+  transition: transform 2s, opacity 4s;
   opacity: 0;
   transform: translateY(-80px);
 }
