@@ -61,6 +61,7 @@ h2 {
 }
 
 #gradiant {
+  width: 100%;
   background: linear-gradient(to bottom, #030e21, #00000c);
 }
 </style>
