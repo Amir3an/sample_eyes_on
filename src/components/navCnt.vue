@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto">
+  <div class="w-[80%] m-auto">
     <div id="gradiant">
       <h2
         class="text-white text-5xl font-bold m-auto w-[80%]"
@@ -60,9 +60,9 @@ h2 {
   font-family: BarlowRegula;
 }
 
-#gradiant {
+/* #gradiant {
   position: absolute;
   width: 100%;
   background: linear-gradient(to bottom, #030e2100, #00000c);
-}
+} */
 </style>
