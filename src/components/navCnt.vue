@@ -12,7 +12,8 @@
       </h2>
     </div>
 
-    <div id="card-background">
+    <div class="relative">
+      <div id="card-background"></div>
       <div class="w-[532px] flex items-center justify-between">
         <p
           id="card"
@@ -88,17 +89,21 @@ h2 {
 }
 
 #card {
-  background: linear-gradient(145deg, #1e293b, #0f172a);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 9;
 }
 
 #card-background {
-  position: relative;
-  background: rgba(255, 255, 255, 0.1); /* شفافیت رنگ */
-  backdrop-filter: blur(30px); /* میزان تاری */
+  position: absolute;
+  top: -2rem;
+  width: 430px;
+  height: 409px;
+  background-color: #71c3d04d;
+  transform: rotate(-90.91deg);
+  filter: blur(196px); /* میزان تاری */
   border-radius: 12px; /* گرد کردن گوشه‌ها */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* سایه */
   padding: 16px;
+  z-index: -9;
 }
 
 /* #gradiant {
