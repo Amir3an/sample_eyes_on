@@ -7,7 +7,7 @@
     class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10"
   >
     <p class="text-white text-xl">EyesOn</p>
-    <ul class="flex w-72 justify-between">
+    <ul class="flex w-[395px] justify-between">
       <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a></li>
       <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Services</a></li>
       <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Portfolio</a></li>
