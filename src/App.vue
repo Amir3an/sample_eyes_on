@@ -2,14 +2,19 @@
   <header>
     <headerCnt />
   </header>
+  <nav>
+    <navCnt />
+  </nav>
 </template>
 
 <script>
 import headerCnt from "./components/headerCnt.vue";
+import navCnt from "./components/headerCnt.vue";
 
 export default {
   components: {
     headerCnt,
+    navCnt,
   },
 };
 </script>
