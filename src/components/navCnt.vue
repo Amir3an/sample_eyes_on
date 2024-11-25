@@ -1,4 +1,6 @@
-<template>im in</template>
+<template>
+  <p class="text-white">im in</p>
+</template>
 
 <script>
 export default {};

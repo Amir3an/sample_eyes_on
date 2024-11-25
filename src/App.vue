@@ -9,7 +9,7 @@
 
 <script>
 import headerCnt from "./components/headerCnt.vue";
-import navCnt from "./components/headerCnt.vue";
+import navCnt from "./components/navCnt.vue";
 
 export default {
   components: {
