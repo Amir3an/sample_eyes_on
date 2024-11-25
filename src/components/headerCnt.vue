@@ -5,6 +5,7 @@
   />
   <div
     id="cnt"
+    :class="{ visible: isVisible }"
     class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10"
   >
     <p class="text-white text-xl">EyesOn</p>
