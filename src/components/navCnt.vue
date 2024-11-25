@@ -1,14 +1,18 @@
 <template>
-  <div class="w-[80%] bg-red-300 m-auto">
-    <h2
-      class="text-white text-5xl font-bold"
-      id="cnt"
-      ref="observeItem"
-      :class="{ visible: isVisible }"
-    >
-      What is our <br />
-      mission
-    </h2>
+  <div class="w-[80%] m-auto">
+    <div id="gradiant">
+      <h2
+        class="text-white text-5xl font-bold"
+        id="cnt"
+        ref="observeItem"
+        :class="{ visible: isVisible }"
+      >
+        What is our <br />
+        mission
+      </h2>
+    </div>
+
+    <p class="w-[156px] h-[154px] bg-[#70F9E01A] blur-[10px] rounded-2xl"></p>
   </div>
 </template>
 <script>
@@ -54,5 +58,9 @@ export default {
 <style scoepd>
 h2 {
   font-family: BarlowRegula;
+}
+
+#gradiant {
+  background: linear-gradient(to bottom, #030e21, #00000c);
 }
 </style>
