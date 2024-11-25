@@ -1,7 +1,7 @@
 <template>
   <img
-    class="fixed z-[-99] object-cover w-full h-full"
-    src="@/assets/img/1.png"
+    class="relative z-[-99] object-cover w-full h-full"
+    src="../assets/img/1.png"
   />
   <div id="pic" class="w-[100%] m-auto h-[550px] flex">
     <ul class="w-[100%] flex h-10">
