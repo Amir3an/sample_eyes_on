@@ -8,9 +8,9 @@
   >
     <p class="text-white text-xl">EyesOn</p>
     <ul class="flex w-72 justify-between">
-      <li><a class="text-xl font-normal text-[#FFFFFF]">Home</a></li>
-      <li><a class="text-xl font-normal text-[#FFFFFF]">Services</a></li>
-      <li><a class="text-xl font-normal text-[#FFFFFF]">Portfolio</a></li>
+      <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a></li>
+      <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Services</a></li>
+      <li><a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Portfolio</a></li>
     </ul>
 
     <p class="text-[#F1EDBA]">Motion Graphics</p>
