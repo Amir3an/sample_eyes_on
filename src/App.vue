@@ -25,7 +25,7 @@ body {
   background: rgb(207, 207, 207);
 }
 #app {
-  width: 90%;
+  width: 100%;
   height: 100%;
   font-family: Bangla Sangam MN;
   margin: auto;
