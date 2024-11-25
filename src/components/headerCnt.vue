@@ -4,6 +4,7 @@
     src="../assets/img/1.png"
   />
   <div
+    id="cnt"
     class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10"
   >
     <p class="text-white text-xl">EyesOn</p>
@@ -67,6 +68,17 @@ export default {
 };
 </script>
 <style scoped>
+#cnt {
+  transition: transform 2s, opacity 3s;
+  opacity: 1;
+  transform: translateY(-80px);
+}
+
+#cnt.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 div {
   font-family: BanglaSanga;
 }
