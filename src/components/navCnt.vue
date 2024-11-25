@@ -12,23 +12,28 @@
       </h2>
     </div>
 
-    <div>
+    <div id="card-background">
       <div class="w-[532px] flex items-center justify-between">
         <p
+          id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         ></p>
         <p
+          id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         ></p>
         <p
+          id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         ></p>
       </div>
       <div class="w-[344px] mt-8 flex items-center justify-between">
         <p
+          id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         ></p>
         <p
+          id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         ></p>
       </div>
@@ -80,6 +85,20 @@ h2 {
   margin-top: -79px;
   margin-right: 15px;
   font-family: BarlowRegula;
+}
+
+#card {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+#card-background {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* شفافیت رنگ */
+  backdrop-filter: blur(30px); /* میزان تاری */
+  border-radius: 12px; /* گرد کردن گوشه‌ها */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* سایه */
+  padding: 16px;
 }
 
 /* #gradiant {
