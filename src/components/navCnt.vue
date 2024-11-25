@@ -1,6 +1,11 @@
 <template>
   <div class="w-[80%] bg-red-300 m-auto">
-    <h2 class="text-white text-5xl font-bold">
+    <h2
+      class="text-white text-5xl font-bold"
+      id="cnt"
+      ref="observeItem"
+      :class="{ visible: isVisible }"
+    >
       What is our <br />
       mission
     </h2>
