@@ -1,6 +1,6 @@
 <template>
   <img class="w-full h-full" src="../assets/img/1.png" />
-  <div class="w-[100%] m-auto h-[550px] flex">
+  <div id="pic" class="w-[100%] m-auto h-[550px] flex">
     <ul class="w-[100%] flex h-10">
       <p class="text-white text-xl">EyesOn</p>
       <a class="text-xl text-[#FFFFFF]">Home</a>
@@ -16,5 +16,9 @@
 <style scoped>
 div {
   font-family: BanglaSanga;
+}
+
+#pic {
+  background: url("../assets/img/1.png") center;
 }
 </style>
