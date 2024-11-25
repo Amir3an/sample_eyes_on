@@ -97,10 +97,10 @@ h2 {
   position: absolute;
   top: -2rem;
   width: 430px;
-  height: 409px;
+  height: 509.16px;
   background-color: #71c3d04d;
   transform: rotate(-90.91deg);
-  filter: blur(196px); /* میزان تاری */
+  filter: blur(166px); /* میزان تاری */
   border-radius: 12px; /* گرد کردن گوشه‌ها */
   padding: 16px;
   z-index: -9;
