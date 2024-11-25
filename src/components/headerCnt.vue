@@ -71,7 +71,7 @@ export default {
 <style scoped>
 #cnt {
   transition: transform 2s, opacity 3s;
-  opacity: 1;
+  opacity: 0;
   transform: translateY(-80px);
 }
 
