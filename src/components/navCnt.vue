@@ -1,8 +1,8 @@
 <template>
-  <div class="w-[80%] m-auto">
+  <div class="m-auto">
     <div id="gradiant">
       <h2
-        class="text-white text-5xl font-bold"
+        class="text-white text-5xl font-bold m-auto w-[80%]"
         id="cnt"
         ref="observeItem"
         :class="{ visible: isVisible }"
@@ -61,7 +61,8 @@ h2 {
 }
 
 #gradiant {
+  position: absolute;
   width: 100%;
-  background: linear-gradient(to bottom, #030e21, #00000c);
+  background: linear-gradient(to bottom, #030e2100, #00000c);
 }
 </style>
