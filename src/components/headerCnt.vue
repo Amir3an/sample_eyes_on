@@ -39,13 +39,13 @@
         <div
           class="relative transition-all mt-0 duration-700 leading-none ease-in-out"
           :style="{
-            transform: `translateY(${activeIndex * -15.9}%)`,
+            transform: `translateY(${activeIndex * -16.2}%)`,
           }"
         >
           <p
             v-for="(text, index) in texts"
             :key="index"
-            class="text-lg font-bold text-[#F1EDBA] flex items-center justify-center"
+            class="text-lg pt-1 font-bold text-[#F1EDBA] flex items-center justify-center"
           >
             {{ text }}
           </p>
@@ -87,7 +87,7 @@ export default {
     });
 
     // شروع تایمر برای چرخش متن
-    setInterval(this.nextText, 1000); // هر ۳ ثانیه متن تغییر کند
+    setInterval(this.nextText, 2500); // هر ۳ ثانیه متن تغییر کند
   },
   methods: {
     handleIntersect(entries) {
