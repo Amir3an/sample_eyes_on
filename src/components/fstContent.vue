@@ -14,6 +14,7 @@ export default {};
 
 <style scoped>
 div {
+  font-family: BarlowRegula;
   color: white;
 }
 </style>
