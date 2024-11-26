@@ -63,10 +63,9 @@
           </span>
         </p>
       </div>
-      <h2 class="text-white">
-        Detailed infortmation about our motion graphics and
-        animation services, including examples and benefits.
-        Detailed infortmation about our motion.
+      <h2 class="text-white text-xl">
+        Detailed infortmation about our motion graphics and animation services,
+        including examples and benefits. Detailed infortmation about our motion.
       </h2>
     </div>
   </div>
@@ -115,6 +114,10 @@ export default {
 #cnt {
   margin-top: -79px;
   margin-right: 15px;
+  font-family: BarlowRegula;
+}
+
+h2 {
   font-family: BarlowRegula;
 }
 
