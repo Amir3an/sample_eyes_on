@@ -1,32 +1,58 @@
 <template>
-  <img
-    class="relative z-[-99] object-cover w-full h-full"
-    src="../assets/img/1.png"
-  />
-  <div
-    id="cnt"
-    ref="observeItem"
-    :class="{ visible: isVisible }"
-    class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10"
-  >
-    <p class="text-white text-xl">EyesOn</p>
-    <ul class="flex w-[395px] ml-10 justify-between">
-      <li>
-        <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
-      </li>
-      <li>
-        <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
-          >Services</a
-        >
-      </li>
-      <li>
-        <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
-          >Portfolio</a
-        >
-      </li>
-    </ul>
+  <div class="relative">
+    <!-- تصویر پس‌زمینه -->
+    <img
+      class="relative z-[-99] object-cover w-full h-full"
+      src="../assets/img/1.png"
+      alt="Background"
+    />
 
-    <p class="text-[#F1EDBA]">Motion Graphics</p>
+    <!-- محتوای اصلی -->
+    <div
+      id="cnt"
+      ref="observeItem"
+      :class="{ visible: isVisible }"
+      class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
+    >
+      <!-- متن لوگو -->
+      <p class="text-white text-xl">EyesOn</p>
+
+      <!-- منو -->
+      <ul class="flex w-[395px] ml-10 justify-between">
+        <li>
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
+        </li>
+        <li>
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
+            >Portfolio</a
+          >
+        </li>
+      </ul>
+
+      <!-- متن متحرک -->
+      <div
+        class="relative flex items-center justify-center h-8 overflow-hidden"
+      >
+        <div
+          class="transition-transform duration-700 ease-in-out"
+          :style="{ transform: `translateY(-${activeIndex * 100}%)` }"
+          @transitionend="nextText"
+        >
+          <p
+            v-for="(text, index) in texts"
+            :key="index"
+            class="text-lg font-bold text-[#F1EDBA]"
+          >
+            {{ text }}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -34,44 +60,61 @@
 export default {
   data() {
     return {
-      isVisible: false, // مدیریت نمایش متن
-      observer: null,
+      isVisible: false, // مدیریت نمایش عنصر
+      observer: null, // رفرنس به IntersectionObserver
+      texts: [
+        "Motion Graphics",
+        "VFX & Effects",
+        "2D 3D Animation",
+        "Social Media Content",
+        "Video Editting ",
+        "Graphic Design",
+      ], // متن‌های متحرک
+      activeIndex: 0, // شاخص متن فعال
     };
   },
   mounted() {
-    console.log("Component mounted, setting up observer");
-
-    // ایجاد یک Observer برای مشاهده‌ی تغییرات در عنصر
+    // ایجاد IntersectionObserver
     this.observer = new IntersectionObserver(this.handleIntersect, {
-      threshold: 0.1, // وقتی 10 درصد از عنصر دیده شود، تریگر می‌شود
+      threshold: 0.1, // وقتی ۱۰٪ از عنصر دیده شود
     });
 
+    // شروع مشاهده عنصر بعد از آماده شدن DOM
     this.$nextTick(() => {
-      const el = this.$refs.observeItem; // گرفتن رفرنس عنصر
+      const el = this.$refs.observeItem;
       if (el) {
-        this.observer.observe(el); // شروع مشاهده‌ی عنصر
+        this.observer.observe(el);
       }
     });
+
+    // شروع تایمر برای چرخش متن
+    setInterval(this.nextText, 1000); // هر ۲ ثانیه متن تغییر کند
   },
   methods: {
     handleIntersect(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          this.isVisible = true; // نمایش عنصر وقتی که در viewport قرار می‌گیرد
+          this.isVisible = true; // وقتی عنصر در viewport قرار بگیرد
         }
       });
+    },
+    nextText() {
+      // چرخش به متن بعدی
+      this.activeIndex = (this.activeIndex + 1) % this.texts.length;
     },
   },
   beforeUnmount() {
     if (this.observer) {
-      this.observer.disconnect();
+      this.observer.disconnect(); // توقف مشاهده
     }
   },
 };
 </script>
+
 <style scoped>
+/* استایل مربوط به انیمیشن */
 #cnt {
-  transition: transform 2s, opacity 4s;
+  transition: transform 1s, opacity 1s ease-in-out;
   opacity: 0;
   transform: translateY(-80px);
 }
@@ -81,6 +124,7 @@ export default {
   transform: translateY(0);
 }
 
+/* استایل‌های فونت و متن */
 div {
   font-family: BanglaSanga;
 }
