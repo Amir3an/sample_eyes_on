@@ -109,9 +109,10 @@ export default {
 /* استایل مربوط به انیمیشن fade */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease-in-out;
 }
-.fade-enter-from,
+
+.fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
