@@ -12,7 +12,7 @@
       </h2>
     </div>
 
-    <div class="relative">
+    <div class="relative ml-[10%]">
       <div id="card-background"></div>
       <div class="w-[532px] flex items-center justify-between">
         <p
@@ -43,7 +43,7 @@
           </span>
         </p>
       </div>
-      <div class="w-auto mt-8 flex items-center justify-between">
+      <div class="w-[344px] mt-8 flex items-center justify-between">
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
@@ -62,13 +62,13 @@
             Engagement
           </span>
         </p>
-        <h2 class="text-white text-xl font-normal ml-10">
-          Detailed infortmation about our motion graphics and<br />
-          animation services, including examples and benefits.<br />
-          Detailed infortmation about our motion.
-        </h2>
       </div>
     </div>
+    <h2 class="text-white text-xl font-normal ml-[-5rem] mt-72">
+      Detailed infortmation about our motion graphics and<br />
+      animation services, including examples and benefits.<br />
+      Detailed infortmation about our motion.
+    </h2>
   </div>
 </template>
 <script>
