@@ -10,9 +10,11 @@
     </div>
 
     <div class="w-full flex mt-12 h-[620px] rounded-3xl bg-red-200">
-      <div class="w-[50%] h-full flex bg-red-200">
+      <div
+        class="w-[50%] flex flex-col justify-center h-full rounded-3xl bg-red-200"
+      >
         <span class="text-[#F1EDBA]">3D Design</span>
-        <h2 class="text-3xl">
+        <h2 class="text-3xl font-bold">
           A brand 3d Design<br />
           Characteristic for growth
         </h2>
