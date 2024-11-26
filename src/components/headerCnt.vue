@@ -34,17 +34,22 @@
         </li>
       </ul>
 
-      <!-- متن متحرک با انیمیشن fade -->
-      <div class="relative flex items-center justify-center h-8">
-        <transition-group name="fade" tag="div" class="relative">
+      <!-- متن متحرک با انیمیشن translateY -->
+      <div class="relative items-center overflow-hidden h-8">
+        <div
+          class="relative transition-all mt-0 duration-700 leading-none ease-in-out"
+          :style="{
+            transform: `translateY(${activeIndex * -15.9}%)`,
+          }"
+        >
           <p
-            v-for="(text, index) in [texts[activeIndex]]"
+            v-for="(text, index) in texts"
             :key="index"
-            class="text-lg font-bold text-[#F1EDBA] absolute inset-0 flex items-center justify-center"
+            class="text-lg font-bold text-[#F1EDBA] flex items-center justify-center"
           >
             {{ text }}
           </p>
-        </transition-group>
+        </div>
       </div>
     </div>
   </div>
@@ -82,7 +87,7 @@ export default {
     });
 
     // شروع تایمر برای چرخش متن
-    setInterval(this.nextText, 3000); // هر ۳ ثانیه متن تغییر کند
+    setInterval(this.nextText, 1000); // هر ۳ ثانیه متن تغییر کند
   },
   methods: {
     handleIntersect(entries) {
@@ -106,17 +111,6 @@ export default {
 </script>
 
 <style scoped>
-/* استایل مربوط به انیمیشن fade */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 1.5s ease-in-out;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
 /* استایل‌های اصلی */
 #cnt {
   transition: transform 1s, opacity 1s ease-in-out;
