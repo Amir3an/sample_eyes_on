@@ -2,7 +2,7 @@
   <div class="w-[80%] flex m-auto">
     <div>
       <h2
-        class="text-white text-5xl font-bold w-[100%]"
+        class="text-white text-5xl leading-tight font-bold w-[100%]"
         id="cnt1"
         ref="observeItem"
         :class="{ visible: isVisible }"
@@ -134,6 +134,7 @@ span {
 #card-background {
   position: absolute;
   top: -2rem;
+  left: -10rem;
   width: 430px;
   height: 509.16px;
   background-color: #71c3d04d;
