@@ -9,9 +9,12 @@
       </button>
     </div>
 
-    <div class="w-full mt-12 h-[620px] rounded-3xl bg-red-100">
-      <p></p>
-      <img class="w-[50%] h-full rounded-3xl" src="../assets/img/card.png" />
+    <div class="w-full flex mt-12 h-[620px] rounded-3xl bg-blue-100">
+      <div class="w-[50%] h-full flex bg-red-200"></div>
+      <img
+        class="w-[50%] h-full rounded-3xl object-cover"
+        src="../assets/img/card.png"
+      />
     </div>
   </div>
 </template>
