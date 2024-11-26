@@ -18,7 +18,12 @@
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-        ></p>
+        >
+          <span class="text-xl font-semibold text-white">
+            Increase<br />
+            Engagement
+          </span>
+        </p>
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
@@ -85,6 +90,10 @@ export default {
 h2 {
   margin-top: -79px;
   margin-right: 15px;
+  font-family: BarlowRegula;
+}
+
+span {
   font-family: BarlowRegula;
 }
 
