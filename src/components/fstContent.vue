@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-[80%] flex m-auto">
     <h2>Services</h2>
     <p>
       Detailed infortmation about our motion graphics and<br />
@@ -12,4 +12,8 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+div {
+  color: white;
+}
+</style>
