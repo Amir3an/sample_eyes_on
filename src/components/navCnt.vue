@@ -64,7 +64,7 @@
         </p>
       </div>
     </div>
-    <h2 class="text-white text-xl font-normal ml-[-5rem] mt-72">
+    <h2 class="text-white text-xl font-normal ml-[-9rem] mt-72">
       Detailed infortmation about our motion graphics and<br />
       animation services, including examples and benefits.<br />
       Detailed infortmation about our motion.
