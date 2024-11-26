@@ -9,7 +9,7 @@
       >
         What is our <br />
         mission
-    </h1>
+      </h1>
     </div>
 
     <div class="relative ml-[10%]">
