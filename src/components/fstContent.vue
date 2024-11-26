@@ -53,10 +53,11 @@ button {
 }
 
 #blur {
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(21px);
 }
 
 #img {
+  backdrop-filter: brightness(600%);
   background: url("../assets/img/eyseOn1.png");
 }
 </style>
