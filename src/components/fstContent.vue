@@ -15,8 +15,20 @@
     </div>
 
     <div class="w-[594px] h-auto">
-      <p class="w-full h-[180px] rounded-3xl bg-red-200"></p>
-      <p class="w-full h-[180px] mt-5 rounded-3xl bg-red-200"></p>
+      <div class="w-full h-[180px] px-10 py-8 rounded-3xl bg-red-200">
+        <h2 class="text-2xl font-bold">Motion Graphic</h2>
+        <p class="text-xl mt-4">
+          Detailed infortmation about our motion graphics and<br />
+          animation services, including examples and benefits.
+        </p>
+      </div>
+      <div class="w-full h-[180px] px-10 py-8 mt-5 rounded-3xl bg-red-200">
+        <h2 class="text-2xl font-bold">2D & 3D Animation</h2>
+        <p class="text-xl mt-4">
+          Detailed infortmation about our motion graphics and<br />
+          animation services, including examples and benefits.
+        </p>
+      </div>
     </div>
   </div>
 </template>
