@@ -15,7 +15,7 @@
     </div>
 
     <div class="w-[594px] h-auto">
-      <div id="img">
+      <div id="img" class="rounded-3xl">
         <div
           id="blur"
           class="w-full relative h-[180px] px-10 py-8 rounded-3xl bg-[#70F9E01A]"
@@ -58,5 +58,6 @@ button {
 
 #img {
   background: url("../assets/img/eyseOn1.png");
+  
 }
 </style>
