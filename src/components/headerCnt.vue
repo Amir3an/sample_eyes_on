@@ -23,10 +23,14 @@
           <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
         </li>
         <li>
-          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Services</a>
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
+            >Services</a
+          >
         </li>
         <li>
-          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Portfolio</a>
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
+            >Portfolio</a
+          >
         </li>
       </ul>
 
