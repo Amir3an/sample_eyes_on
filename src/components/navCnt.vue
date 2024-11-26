@@ -27,22 +27,47 @@
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-        ></p>
+        >
+          <span class="text-xl font-semibold text-white">
+            Increase<br />
+            Engagement
+          </span>
+        </p>
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-        ></p>
+        >
+          <span class="text-xl font-semibold text-white">
+            Increase<br />
+            Engagement
+          </span>
+        </p>
       </div>
       <div class="w-[344px] mt-8 flex items-center justify-between">
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-        ></p>
+        >
+          <span class="text-xl font-semibold text-white">
+            Increase<br />
+            Engagement
+          </span>
+        </p>
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
-        ></p>
+        >
+          <span class="text-xl font-semibold text-white">
+            Increase<br />
+            Engagement
+          </span>
+        </p>
       </div>
+      <h2 class="text-white">
+        Detailed infortmation about our motion graphics and
+        animation services, including examples and benefits.
+        Detailed infortmation about our motion.
+      </h2>
     </div>
   </div>
 </template>
@@ -87,7 +112,7 @@ export default {
 </script>
 
 <style scoepd>
-h2 {
+#cnt {
   margin-top: -79px;
   margin-right: 15px;
   font-family: BarlowRegula;
