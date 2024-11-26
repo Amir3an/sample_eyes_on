@@ -15,7 +15,10 @@
     </div>
 
     <div class="w-[594px] h-auto">
-      <div id="blur" class="w-full h-[180px] px-10 py-8 rounded-3xl bg-[#70F9E01A]">
+      <div
+        id="blur"
+        class="w-full h-[180px] px-10 py-8 rounded-3xl bg-[#70F9E01A]"
+      >
         <h2 class="text-2xl font-bold">Motion Graphic</h2>
         <p class="text-xl mt-4">
           Detailed infortmation about our motion graphics and<br />
@@ -48,6 +51,6 @@ button {
 }
 
 #blur {
-    backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 </style>
