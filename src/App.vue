@@ -8,18 +8,23 @@
   <section class="mt-[10%]">
     <fstContent />
   </section>
+  <section class="mt-[10%]">
+    <secContent />
+  </section>
 </template>
 
 <script>
 import headerCnt from "./components/headerCnt.vue";
 import navCnt from "./components/navCnt.vue";
 import fstContent from "./components/fstContent.vue";
+import secContent from "./components/fstContent.vue";
 
 export default {
   components: {
     headerCnt,
     navCnt,
     fstContent,
+    secContent
   },
 };
 </script>
