@@ -3,7 +3,7 @@
     <div>
       <h2
         class="text-white text-5xl font-bold w-[100%]"
-        id="cnt"
+        id="cnt1"
         ref="observeItem"
         :class="{ visible: isVisible }"
       >
@@ -43,7 +43,7 @@
           </span>
         </p>
       </div>
-      <div class="w-[344px] mt-8 flex items-center justify-between">
+      <div class="w-auto mt-8 flex items-center justify-between">
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
@@ -62,11 +62,12 @@
             Engagement
           </span>
         </p>
+        <h2 class="text-white text-xl font-normal ml-10">
+          Detailed infortmation about our motion graphics and<br />
+          animation services, including examples and benefits.<br />
+          Detailed infortmation about our motion.
+        </h2>
       </div>
-      <h2 class="text-white text-xl">
-        Detailed infortmation about our motion graphics and animation services,
-        including examples and benefits. Detailed infortmation about our motion.
-      </h2>
     </div>
   </div>
 </template>
@@ -111,7 +112,7 @@ export default {
 </script>
 
 <style scoepd>
-#cnt {
+#cnt1 {
   margin-top: -79px;
   margin-right: 15px;
   font-family: BarlowRegula;
