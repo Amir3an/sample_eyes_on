@@ -7,7 +7,7 @@
     </p>
 
     <button
-      class="w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px] border-spacing-1 border-solid border-[#F1EDBA]"
+      class="w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px ]"
     >
       View More
     </button>
@@ -22,5 +22,9 @@ export default {};
 div {
   font-family: BarlowRegula;
   color: white;
+}
+
+button {
+  border: 1px solid #f1edba;
 }
 </style>
