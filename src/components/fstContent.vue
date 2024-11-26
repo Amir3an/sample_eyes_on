@@ -13,6 +13,11 @@
         View More
       </button>
     </div>
+
+    <div class="w-[594px] h-auto">
+      <p class="w-full h-[180px] rounded-3xl bg-red-200"></p>
+      <p class="w-full h-[180px] rounded-3xl bg-red-200"></p>
+    </div>
   </div>
 </template>
 
