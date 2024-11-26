@@ -23,34 +23,24 @@
           <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
         </li>
         <li>
-          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
-            >Services</a
-          >
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Services</a>
         </li>
         <li>
-          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]"
-            >Portfolio</a
-          >
+          <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Portfolio</a>
         </li>
       </ul>
 
-      <!-- متن متحرک -->
-      <div
-        class="relative flex items-center justify-center h-8 overflow-hidden"
-      >
-        <div
-          class="transition-transform duration-700 ease-in-out"
-          :style="{ transform: `translateY(-${activeIndex * 100}%)` }"
-          @transitionend="nextText"
-        >
+      <!-- متن متحرک با انیمیشن fade -->
+      <div class="relative flex items-center justify-center h-8">
+        <transition-group name="fade" tag="div" class="relative">
           <p
-            v-for="(text, index) in texts"
+            v-for="(text, index) in [texts[activeIndex]]"
             :key="index"
-            class="text-lg font-bold text-[#F1EDBA]"
+            class="text-lg font-bold text-[#F1EDBA] absolute inset-0 flex items-center justify-center"
           >
             {{ text }}
           </p>
-        </div>
+        </transition-group>
       </div>
     </div>
   </div>
@@ -67,7 +57,7 @@ export default {
         "VFX & Effects",
         "2D 3D Animation",
         "Social Media Content",
-        "Video Editting ",
+        "Video Editting",
         "Graphic Design",
       ], // متن‌های متحرک
       activeIndex: 0, // شاخص متن فعال
@@ -88,7 +78,7 @@ export default {
     });
 
     // شروع تایمر برای چرخش متن
-    setInterval(this.nextText, 2000); // هر ۲ ثانیه متن تغییر کند
+    setInterval(this.nextText, 3000); // هر ۳ ثانیه متن تغییر کند
   },
   methods: {
     handleIntersect(entries) {
@@ -112,7 +102,17 @@ export default {
 </script>
 
 <style scoped>
-/* استایل مربوط به انیمیشن */
+/* استایل مربوط به انیمیشن fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1.5s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* استایل‌های اصلی */
 #cnt {
   transition: transform 1s, opacity 1s ease-in-out;
   opacity: 0;
