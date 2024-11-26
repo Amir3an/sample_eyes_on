@@ -5,16 +5,21 @@
   <nav class="mt-[20%]">
     <navCnt />
   </nav>
+  <section class="mt-[5%]">
+    <fstContent />
+  </section>
 </template>
 
 <script>
 import headerCnt from "./components/headerCnt.vue";
 import navCnt from "./components/navCnt.vue";
+import fstContent from "./components/fstContent.vue";
 
 export default {
   components: {
     headerCnt,
     navCnt,
+    fstContent,
   },
 };
 </script>
