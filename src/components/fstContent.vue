@@ -1,7 +1,7 @@
 <template>
   <div class="w-[80%] flex m-auto">
     <div class="flex flex-col gap-8">
-      <h2 class="text-5xl font-bold">Services</h2>
+      <h2 class="text-5xl font-bold mb-4">Services</h2>
       <p class="text-xl">
         Detailed infortmation about our motion graphics and<br />
         animation services, including examples and benefits.
