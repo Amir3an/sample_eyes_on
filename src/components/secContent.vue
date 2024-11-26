@@ -16,6 +16,11 @@
           A brand 3d Design<br />
           Characteristic for growth
         </h2>
+        <button
+          class="w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+        >
+          View Project
+        </button>
       </div>
       <img
         class="w-[50%] h-full rounded-3xl object-cover"
