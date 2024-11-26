@@ -1,15 +1,15 @@
 <template>
   <div class="w-[80%] flex m-auto">
     <div>
-      <h2
-        class="text-white text-5xl leading-tight font-bold w-[100%]"
+      <h1
+        class="text-white text-5xl leading-tight font-extrabold w-[100%]"
         id="cnt1"
         ref="observeItem"
         :class="{ visible: isVisible }"
       >
         What is our <br />
         mission
-      </h2>
+    </h1>
     </div>
 
     <div class="relative ml-[10%]">
