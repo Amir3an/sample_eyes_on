@@ -88,7 +88,7 @@ export default {
     });
 
     // شروع تایمر برای چرخش متن
-    setInterval(this.nextText, 1000); // هر ۲ ثانیه متن تغییر کند
+    setInterval(this.nextText, 2000); // هر ۲ ثانیه متن تغییر کند
   },
   methods: {
     handleIntersect(entries) {
