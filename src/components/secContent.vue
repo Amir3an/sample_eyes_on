@@ -11,7 +11,7 @@
 
     <div class="w-full flex mt-12 h-[620px] rounded-3xl bg-red-200">
       <div
-        class="w-[50%] flex flex-col justify-center h-full rounded-3xl bg-red-200"
+        class="w-[50%] flex flex-col gap-8 justify-center h-full rounded-3xl bg-red-200 pl-[5%]"
       >
         <span class="text-[#F1EDBA]">3D Design</span>
         <h2 class="text-3xl font-bold">
