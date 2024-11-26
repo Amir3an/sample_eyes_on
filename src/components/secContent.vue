@@ -10,7 +10,13 @@
     </div>
 
     <div class="w-full flex mt-12 h-[620px] rounded-3xl bg-blue-100">
-      <div class="w-[50%] h-full flex bg-red-200"></div>
+      <div class="w-[50%] h-full flex bg-red-200">
+        <span class="text-[#F1EDBA]">3D Design</span>
+        <h2 class="text-3xl">
+          A brand 3d Design<br />
+          Characteristic for growth
+        </h2>
+      </div>
       <img
         class="w-[50%] h-full rounded-3xl object-cover"
         src="../assets/img/card.png"
