@@ -5,10 +5,10 @@
   <nav class="mt-[20%]">
     <navCnt />
   </nav>
-  <section class="mt-[10%]">
+  <section class="mt-[15%]">
     <fstContent />
   </section>
-  <section class="mt-[10%]">
+  <section class="mt-[15%]">
     <secContent />
   </section>
 </template>
