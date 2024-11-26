@@ -14,7 +14,7 @@
 
     <div class="relative ml-[10%]">
       <div id="card-background"></div>
-      <div class="w-[532px] flex items-center justify-between">
+      <div class="w-[553px] flex items-center justify-between">
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
@@ -43,7 +43,7 @@
           </span>
         </p>
       </div>
-      <div class="w-[344px] mt-8 flex items-center justify-between">
+      <div class="w-[353px] mt-8 flex items-center justify-between">
         <p
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
