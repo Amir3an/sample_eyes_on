@@ -18,7 +18,7 @@
       <p class="text-white text-xl">EyesOn</p>
 
       <!-- منو -->
-      <ul class="flex w-[395px] ml-10 justify-between">
+      <ul class="flex w-[395px] ml-24 justify-between">
         <li>
           <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
         </li>
