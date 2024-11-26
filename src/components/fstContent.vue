@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[80%] flex m-auto">
+  <div class="w-[80%] flex justify-between m-auto">
     <div class="flex flex-col gap-8">
       <h2 class="text-5xl font-bold mb-4">Services</h2>
       <p class="text-xl">
@@ -16,7 +16,7 @@
 
     <div class="w-[594px] h-auto">
       <p class="w-full h-[180px] rounded-3xl bg-red-200"></p>
-      <p class="w-full h-[180px] rounded-3xl bg-red-200"></p>
+      <p class="w-full h-[180px] mt-5 rounded-3xl bg-red-200"></p>
     </div>
   </div>
 </template>
