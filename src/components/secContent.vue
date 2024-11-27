@@ -9,9 +9,7 @@
       </button>
     </div>
 
-    <div
-      class="w-full flex mt-12 h-[620px]"
-    >
+    <div class="w-full flex mt-12 h-[620px]">
       <div id="img" class="w-[50%] h-full bg-[#70F9E01A] rounded-ss-3xl">
         <div
           class="w-full bg-[#70F9E01A] backdrop-blur-[21px] relative flex flex-col pb-14 gap-8 justify-end h-full rounded-s-3xl pl-[5%]"
