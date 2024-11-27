@@ -1,7 +1,7 @@
 <template>
   <div class="w-[80%] m-auto">
     <article>
-      <h2>FAQs</h2>
+      <h2 class="text-5xl font-bold">FAQs</h2>
 
       <p>
         Detailed infortmation about our motion graphics and animation services,
