@@ -3,12 +3,10 @@
     <!-- بخش سمت چپ -->
     <article class="w-[30%] flex flex-col m-auto gap-12">
       <h2 class="text-5xl font-bold">FAQs</h2>
-
       <p class="text-xl">
         Detailed information about our motion graphics and animation services,
         including examples and benefits.
       </p>
-
       <button class="w-fit mb-6 text-xl text-[#0091A4]">Support</button>
     </article>
 
@@ -17,7 +15,8 @@
       <details
         v-for="(item, index) in questions"
         :key="index"
-        class="rounded-lg bg-[#05393024] text-white p-4 group"
+        class="faq-item rounded-lg bg-[#05393024] text-white p-4 group"
+        @toggle="handleToggle($event)"
       >
         <!-- هدر سوال -->
         <summary
@@ -38,7 +37,7 @@
         </summary>
 
         <!-- بدنه پاسخ -->
-        <div class="mt-2 text-sm text-gray-300 leading-relaxed">
+        <div class="faq-content mt-2 text-sm text-gray-300 leading-relaxed">
           <p>{{ item.answer }}</p>
         </div>
       </details>
@@ -71,15 +70,46 @@ export default {
           answer:
             "SEO results typically take time and can be seen over a period of 3-6 months depending on efforts...",
         },
+        {
+          question: "How long does it take to see SEO results?",
+          answer:
+            "SEO results typically take time and can be seen over a period of 3-6 months depending on efforts...",
+        },
       ],
     };
+  },
+  methods: {
+    handleToggle(event) {
+      const details = event.target;
+      const content = details.querySelector(".faq-content");
+
+      if (details.open) {
+        const height = content.scrollHeight;
+        content.style.height = height + "px";
+        setTimeout(() => {
+          content.style.height = "auto"; // باز کردن کامل
+        }, 300); // مدت زمان انیمیشن
+      } else {
+        const height = content.scrollHeight;
+        content.style.height = height + "px"; // ارتفاع فعلی
+        setTimeout(() => {
+          content.style.height = "0"; // بسته شدن
+        }, 1);
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
 article {
-  font-family: BanglaSanga;
+  font-family: BarlowRegula;
   color: white;
+}
+/* انیمیشن ارتفاع برای باز و بسته شدن */
+.faq-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in;
 }
 </style>
