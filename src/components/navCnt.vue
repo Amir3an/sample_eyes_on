@@ -111,7 +111,7 @@ export default {
 };
 </script>
 
-<style scoepd>
+<style scoped>
 #cnt1 {
   margin-top: -79px;
   margin-right: 15px;
