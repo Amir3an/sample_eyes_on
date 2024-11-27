@@ -13,7 +13,7 @@
     </article>
 
     <!-- بخش سوالات -->
-    <div class="w-[70%] space-y-4">
+    <div class="w-[70%]">
       <details
         v-for="(item, index) in questions"
         :key="index"
@@ -25,7 +25,7 @@
         >
           <span>{{ index + 1 }}) {{ item.question }}</span>
           <span
-            class="flex items-center justify-center w-6 h-6 rounded-full text-center border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] text-xl font-bold group-open:rotate-180 transition-transform"
+            class="flex items-center justify-center w-6 h-6 rounded-full text-center border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] text-xl font-bold group-open:[-] transition-transform"
           >
             +
           </span>
