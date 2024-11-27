@@ -42,7 +42,7 @@
 
     <div id="img2" class="rounded-3xl">
       <div
-        class="w-full flex mt-12 h-[620px] rounded-3xl bg-[#70F9E014] backdrop-blur-[21px]"
+        class="w-full flex flex-row-reverse mt-12 h-[620px] rounded-3xl bg-[#70F9E014] backdrop-blur-[21px]"
       >
         <div id="img2" class="w-[50%] h-full bg-[#70F9E01A] rounded-s-3xl">
           <div
