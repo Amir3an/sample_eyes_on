@@ -15,4 +15,9 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+article {
+  font-family: BanglaSanga;
+  color: white;
+}
+</style>
