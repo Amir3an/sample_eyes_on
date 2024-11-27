@@ -25,14 +25,14 @@
         >
           <span>{{ index + 1 }}) {{ item.question }}</span>
           <span
-            class="relative flex items-center justify-center w-6 h-6 rounded-full text-center border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] group-open:bg-[#005555] transition-colors"
+            class="relative flex items-center justify-center w-8 h-8 rounded-full text-center border border-[#EEE8A9] bg-[#292D32] group-open:bg-[#005555] transition-colors"
           >
             <!-- علامت پلاس -->
             <span
-              class="absolute w-3 h-[2px] bg-[#EEE8A9] transition-transform group-open:rotate-90"
+              class="absolute w-4 h-[3px] rounded-xl bg-[#EEE8A9] transition-transform"
             ></span>
             <span
-              class="absolute h-3 w-[2px] bg-[#EEE8A9] transition-opacity group-open:opacity-0"
+              class="absolute h-4 w-[3px] rounded-xl bg-[#EEE8A9] transition-opacity group-open:opacity-0"
             ></span>
           </span>
         </summary>
