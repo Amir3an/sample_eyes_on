@@ -11,7 +11,7 @@
   <section class="mt-[15%]">
     <secContent />
   </section>
-  <section class="mt-[15%]">
+  <section class="mt-[13%]">
     <portfolioCnt />
   </section>
 </template>
