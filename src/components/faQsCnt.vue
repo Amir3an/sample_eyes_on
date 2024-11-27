@@ -8,8 +8,11 @@
         including examples and benefits.
       </p>
 
-      <button class="w-fit text-xl text-[#0091A4]">Support</button>
+      <button class="w-fit mb-6 text-xl text-[#0091A4]">Support</button>
     </article>
+
+    
+
   </div>
 </template>
 
