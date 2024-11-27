@@ -26,7 +26,7 @@
             {{ index + 1 }}) {{ item.question }}
           </h3>
           <!-- علامت باز و بسته شدن -->
-          <span class="text-xl font-bold">
+          <span class="w-6 h-6 rounded-full text-center leading-6 border border-[#EEE8A9] text-xl font-bold">
             {{ openIndex === index ? "-" : "+" }}
           </span>
         </div>
