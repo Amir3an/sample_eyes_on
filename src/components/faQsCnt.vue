@@ -13,7 +13,7 @@
     </article>
 
     <!-- بخش سوالات -->
-    <div class="w-[70%]">
+    <div class="w-[70%] h-[364px]">
       <details
         v-for="(item, index) in questions"
         :key="index"
