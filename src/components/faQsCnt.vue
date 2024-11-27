@@ -27,7 +27,7 @@
           </h3>
           <!-- علامت باز و بسته شدن -->
           <span
-            class="w-6 h-6 rounded-full text-center leading-6 border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] text-xl font-bold"
+            class="flex items-center justify-center w-6 h-6 rounded-full text-center border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] text-xl font-bold"
           >
             {{ openIndex === index ? "-" : "+" }}
           </span>
