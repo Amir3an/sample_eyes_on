@@ -17,6 +17,9 @@
   <section>
     <eyseOnCnt />
   </section>
+  <section>
+    <faQsCnt />
+  </section>
 </template>
 
 <script>
@@ -26,6 +29,7 @@ import fstContent from "./components/fstContent.vue";
 import secContent from "./components/secContent.vue";
 import portfolioCnt from "./components/portfolioCnt.vue";
 import eyseOnCnt from "./components/eyseOnCnt.vue";
+import faQsCnt from "./components/faQsCnt.vue";
 
 export default {
   components: {
@@ -35,6 +39,7 @@ export default {
     secContent,
     portfolioCnt,
     eyseOnCnt,
+    faQsCnt,
   },
 };
 </script>
