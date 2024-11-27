@@ -1,6 +1,6 @@
 <template>
-  <div class="w-[80%] m-auto">
-    <article class="flex flex-col m-auto gap-12">
+  <div class="w-[80%] flex justify-between m-auto">
+    <article class="w-[30%] flex flex-col m-auto gap-12">
       <h2 class="text-5xl font-bold">FAQs</h2>
 
       <p class="text-xl">
@@ -10,7 +10,7 @@
 
       <button class="w-fit mb-6 text-xl text-[#0091A4]">Support</button>
     </article>
-    <div>
+    <div class="w-[70%]">
       <!-- حلقه برای ایجاد سوالات -->
       <div
         v-for="(item, index) in questions"
@@ -26,7 +26,9 @@
             {{ index + 1 }}) {{ item.question }}
           </h3>
           <!-- علامت باز و بسته شدن -->
-          <span class="w-6 h-6 rounded-full text-center leading-6 border border-[#EEE8A9] text-xl font-bold">
+          <span
+            class="w-6 h-6 rounded-full text-center leading-6 border border-[#EEE8A9] text-xl font-bold"
+          >
             {{ openIndex === index ? "-" : "+" }}
           </span>
         </div>
@@ -61,6 +63,11 @@ export default {
           question: "What are the key elements of SEO?",
           answer:
             "Key elements include keyword research, on-page optimization, backlinks, and content quality...",
+        },
+        {
+          question: "How long does it take to see SEO results?",
+          answer:
+            "SEO results typically take time and can be seen over a period of 3-6 months depending on efforts...",
         },
         {
           question: "How long does it take to see SEO results?",
