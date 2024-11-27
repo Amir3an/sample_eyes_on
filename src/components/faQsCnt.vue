@@ -1,6 +1,13 @@
 <template>
   <div class="w-[80%] m-auto">
-    <img class="w-full h-auto" src="../assets/img/3.png" alt="" />
+    <article>
+      <h2>FAQs</h2>
+
+      <p>
+        Detailed infortmation about our motion graphics and animation services,
+        including examples and benefits.
+      </p>
+    </article>
   </div>
 </template>
 
