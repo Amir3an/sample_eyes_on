@@ -7,6 +7,8 @@
         Detailed infortmation about our motion graphics and animation services,
         including examples and benefits.
       </p>
+
+      <button class="text-xl text-[#0091A4]">Support</button>
     </article>
   </div>
 </template>
