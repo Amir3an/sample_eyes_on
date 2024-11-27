@@ -22,7 +22,7 @@
               A brand 3d Design<br />
               Characteristic for growth
             </h2>
-            <p class="text-xl">
+            <p class="text-xl mb-5">
               Detailed infortmation about our motion graphics and<br />
               animation services, including examples and benefits.
             </p>
@@ -53,7 +53,7 @@
               A brand 3d Design<br />
               Characteristic for growth
             </h2>
-            <p class="text-xl">
+            <p class="text-xl mb-5">
               Detailed infortmation about our motion graphics and<br />
               animation services, including examples and benefits.
             </p>
