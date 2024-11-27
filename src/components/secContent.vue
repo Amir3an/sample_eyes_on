@@ -12,7 +12,7 @@
     <div class="w-full flex mt-12 h-[620px] rounded-3xl bg-[#70F9E01A]">
       <div id="img" class="w-[50%] h-full bg-[#70F9E01A] rounded-ss-3xl">
         <div
-          class="w-full bg-[#70F9E01A] backdrop-blur-[21px] relative flex flex-col gap-8 justify-center h-full rounded-ss-3xl pl-[5%]"
+          class="w-full bg-[#70F9E01A] backdrop-blur-[21px] relative flex flex-col pb-14 gap-8 justify-end h-full rounded-ss-3xl pl-[5%]"
         >
           <span class="text-[#F1EDBA]">3D Design</span>
           <h2 class="text-3xl font-bold">
