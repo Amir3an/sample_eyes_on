@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[80%] f lex justify-between m-auto">
+  <div class="w-[80%] flex items-start justify-between m-auto">
     <!-- بخش سمت چپ -->
     <article class="w-[30%] flex flex-col m-auto gap-12">
       <h2 class="text-5xl font-bold">FAQs</h2>
