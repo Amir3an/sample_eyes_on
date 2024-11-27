@@ -10,7 +10,6 @@
     </div>
 
     <div
-      id="img"
       class="w-full flex mt-12 h-[620px] rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px]"
     >
       <div id="img" class="w-[50%] h-full bg-[#70F9E01A] rounded-ss-3xl">
