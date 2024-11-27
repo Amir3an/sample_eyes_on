@@ -2,14 +2,16 @@
   width: 100%;
   border-radius: 2rem;
   height: 100%;
+  background-color: white;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
+  background-color: white;
 }
 
-.swiper-slide button{
+.swiper-slide button {
   display: none;
 }
 
