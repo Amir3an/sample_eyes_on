@@ -9,7 +9,7 @@
       </button>
     </div>
 
-    <div id="img">
+    <div id="img" class="rounded-3xl">
       <div
         class="w-full flex mt-12 h-[620px] rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px]"
       >
