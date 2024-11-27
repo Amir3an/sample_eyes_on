@@ -13,7 +13,7 @@
     </article>
 
     <!-- بخش سوالات -->
-    <div class="w-[70%]">
+    <div class="w-[70%] space-y-4">
       <details
         v-for="(item, index) in questions"
         :key="index"
@@ -25,9 +25,15 @@
         >
           <span>{{ index + 1 }}) {{ item.question }}</span>
           <span
-            class="flex items-center justify-center w-6 h-6 rounded-full text-center border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] text-xl font-bold group-open:[-] transition-transform"
+            class="relative flex items-center justify-center w-6 h-6 rounded-full text-center border text-[#EEE8A9] bg-[#292D32] border-[#EEE8A9] group-open:bg-[#005555] transition-colors"
           >
-            +
+            <!-- علامت پلاس -->
+            <span
+              class="absolute w-3 h-[2px] bg-[#EEE8A9] transition-transform group-open:rotate-90"
+            ></span>
+            <span
+              class="absolute h-3 w-[2px] bg-[#EEE8A9] transition-opacity group-open:opacity-0"
+            ></span>
           </span>
         </summary>
 
