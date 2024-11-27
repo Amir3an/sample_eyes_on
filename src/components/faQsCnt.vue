@@ -10,12 +10,12 @@
 
       <button class="w-fit mb-6 text-xl text-[#0091A4]">Support</button>
     </article>
-    <div class="space-y-4">
+    <div>
       <!-- حلقه برای ایجاد سوالات -->
       <div
         v-for="(item, index) in questions"
         :key="index"
-        class="border border-gray-700 rounded-lg bg-gray-800 text-white p-4"
+        class="rounded-lg bg-[#05393024] text-white p-4"
       >
         <!-- هدر سوال -->
         <div
@@ -50,7 +50,7 @@ export default {
         {
           question: "What is SEO, and why is it important?",
           answer:
-            "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in search engine result pages...",
+            "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in search engine result pages... Key elements include keyword research, on-page optimization, backlinks, and content quality.. Key elements include keyword research, on-page optimization, backlinks, and content quality..",
         },
         {
           question: "How does SEO help my website?",
