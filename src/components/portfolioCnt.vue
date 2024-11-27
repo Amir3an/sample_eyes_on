@@ -1,9 +1,5 @@
 <template>
-  <div class="w-[80%] flex m-auto">
-    
-
-
-  </div>
+  <div class="w-[80%] flex m-auto"></div>
 </template>
 
 <script>
