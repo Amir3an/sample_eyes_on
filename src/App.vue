@@ -14,6 +14,9 @@
   <section class="mt-[13%]">
     <portfolioCnt />
   </section>
+  <section class="mt-[13%]">
+    <eyseOnCnt />
+  </section>
 </template>
 
 <script>
@@ -22,6 +25,7 @@ import navCnt from "./components/navCnt.vue";
 import fstContent from "./components/fstContent.vue";
 import secContent from "./components/secContent.vue";
 import portfolioCnt from "./components/portfolioCnt.vue";
+import eyseOnCnt from "./components/eyseOnCnt.vue";
 
 export default {
   components: {
@@ -30,6 +34,7 @@ export default {
     fstContent,
     secContent,
     portfolioCnt,
+    eyseOnCnt,
   },
 };
 </script>
