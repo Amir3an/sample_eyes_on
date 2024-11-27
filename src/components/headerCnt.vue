@@ -1,25 +1,11 @@
 <template>
-  <div class="relative liquid-header">
+  <div class="relative">
     <!-- تصویر پس‌زمینه -->
     <img
       class="relative z-[-99] object-cover w-full h-full"
       src="../assets/img/1.png"
       alt="Background"
     />
-
-    <!-- افکت لیکویید -->
-    <svg class="liquid-effect absolute inset-0 pointer-events-none">
-      <filter id="liquid">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-        <feColorMatrix
-          in="blur"
-          type="matrix"
-          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -10"
-          result="goo"
-        />
-        <feBlend in="SourceGraphic" in2="goo" />
-      </filter>
-    </svg>
 
     <!-- محتوای اصلی -->
     <div
@@ -80,7 +66,7 @@ export default {
         "VFX & Effects",
         "2D 3D Animation",
         "Social Media Content",
-        "Video Editing",
+        "Video Editting",
         "Graphic Design",
       ], // متن‌های متحرک
       activeIndex: 0, // شاخص متن فعال
@@ -101,11 +87,7 @@ export default {
     });
 
     // شروع تایمر برای چرخش متن
-    setInterval(this.nextText, 2500); // هر ۲.۵ ثانیه متن تغییر کند
-
-    // اضافه کردن حرکت موس برای افکت لیکویید
-    const liquidHeader = document.querySelector(".liquid-header");
-    liquidHeader.addEventListener("mousemove", this.handleMouseMove);
+    setInterval(this.nextText, 2500); // هر ۳ ثانیه متن تغییر کند
   },
   methods: {
     handleIntersect(entries) {
@@ -118,13 +100,6 @@ export default {
     nextText() {
       // چرخش به متن بعدی
       this.activeIndex = (this.activeIndex + 1) % this.texts.length;
-    },
-    handleMouseMove(event) {
-      const { clientX, clientY } = event;
-      const gooElement = document.querySelector(".liquid-effect");
-      gooElement.style.transform = `translate(${clientX / 20}px, ${
-        clientY / 20
-      }px)`;
     },
   },
   beforeUnmount() {
@@ -148,35 +123,12 @@ export default {
   transform: translateY(0);
 }
 
-/* افکت لیکویید */
-.liquid-header {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  background: linear-gradient(120deg, #3a3a3a, #1c1c1c);
-  animation: glowing 3s infinite alternate;
-}
-
-.liquid-effect {
-  filter: url(#liquid);
-}
-
-@keyframes glowing {
-  0% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  }
-  100% {
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
-  }
-}
-
 /* استایل‌های فونت و متن */
 div {
   font-family: BanglaSanga;
 }
 
 ul li a {
-  font-family: BarlowRegular;
+  font-family: BarlowRegula;
 }
 </style>
