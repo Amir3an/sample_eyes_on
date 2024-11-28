@@ -1,8 +1,8 @@
 <template>
-  <div class="flex w-[80%] justify-between m-auto">
-
-    <h2>Contact us</h2>
-
+  <div class="flex w-[80%] m-auto">
+    <h2 class="text-white text-[56px] font-bold leading-tight w-[100%]">
+      Contact us
+    </h2>
   </div>
 </template>
 
@@ -10,4 +10,8 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+h2 {
+  font-family: Bangla-Sangam-MN;
+}
+</style>
