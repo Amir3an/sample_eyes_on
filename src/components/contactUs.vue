@@ -1,7 +1,9 @@
 <template>
+  <div class="flex w-[80%] justify-between m-auto">
 
-im in
+    <h2>Contact us</h2>
 
+  </div>
 </template>
 
 <script>
