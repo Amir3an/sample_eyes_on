@@ -15,9 +15,10 @@
       class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
     >
       <!-- متن لوگو -->
-      <p class="flex gap-2 items-center text-white">
-        <span><EyesOn /></span> <h2 class="text-[20px]">EyesOn</h2>
-      </p>
+      <div class="flex flex-shrink-0 gap-2 items-center text-white">
+        <span><EyesOn /></span>
+        <h2 class="text-xl flex-shrink-0">EyesOn</h2>
+      </div>
 
       <!-- منو -->
       <ul class="flex w-[395px] ml-24 justify-between">

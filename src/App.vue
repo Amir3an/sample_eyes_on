@@ -46,6 +46,10 @@ export default {
 
 <style>
 @font-face {
+  font-family: Bangla-Sangam-MN;
+  src: url("./assets/fonts/Bangla-Sangam-MN.ttf");
+}
+@font-face {
   font-family: BanglaSanga;
   src: url("./assets/fonts/Bangla-Sanga.ttf");
 }
