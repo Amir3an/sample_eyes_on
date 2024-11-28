@@ -42,7 +42,7 @@
         </div>
       </div>
       <button
-        class="w-[183px] text-xl mt-5 h-14 bg-[#002C3F] border border-[#F1EDBA] rounded-[32px]"
+        class=" w-[183px] text-xl mt-5 h-14 bg-[#002C3F] border border-[#F1EDBA] rounded-[32px]"
       >
         Send Form
       </button>
