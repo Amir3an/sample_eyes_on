@@ -18,13 +18,34 @@
           />
         </div>
       </div>
-      <div class="w-full mt- flex flex-col">
+      <div class="w-full mt-[5%] flex flex-col">
         <lable class="text-xl">Email Address</lable>
         <input
           class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
           type="text"
         />
       </div>
+      <div class="flex mt-[5%] items-center justify-between">
+        <div class="w-[48%] flex flex-col">
+          <label class="text-xl">Phone Number</label>
+          <input
+            class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
+            type="text"
+          />
+        </div>
+        <div class="w-[48%] flex flex-col">
+          <label class="text-xl">Message</label>
+          <input
+            class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
+            type="text"
+          />
+        </div>
+      </div>
+      <button
+        class="w-[183px] text-xl mt-5 h-14 bg-[#002C3F] border border-[#F1EDBA] rounded-[32px]"
+      >
+        Send Form
+      </button>
     </form>
   </div>
 </template>
