@@ -15,7 +15,9 @@
       class="w-[80%] absolute left-[10%] top-12 flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
     >
       <!-- متن لوگو -->
-      <p class="text-white text-xl">EyesOn</p>
+      <p class="flex gap-2 items-center text-white">
+        <span><EyesOn /></span> <h2 class="text-[20px]">EyesOn</h2>
+      </p>
 
       <!-- منو -->
       <ul class="flex w-[395px] ml-24 justify-between">
@@ -56,7 +58,11 @@
 </template>
 
 <script>
+import EyesOn from "../assets/svg-icon/EyesOn.vue";
 export default {
+  components: {
+    EyesOn,
+  },
   data() {
     return {
       isVisible: false, // مدیریت نمایش عنصر
