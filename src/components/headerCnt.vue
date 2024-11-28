@@ -17,7 +17,9 @@
       <!-- متن لوگو -->
       <div class="flex flex-shrink-0 gap-2 items-center text-white">
         <span><EyesOn /></span>
-        <h2 class="font-Bangla-Sangam-MN text-shadow-custom font-[700] tracking-wider text-xl flex-shrink-0">
+        <h2
+          class="font-Bangla-Sangam-MN text-shadow-custom font-[700] tracking-wider text-xl flex-shrink-0"
+        >
           EyesOn
         </h2>
       </div>
