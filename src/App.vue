@@ -20,6 +20,9 @@
   <section>
     <faQsCnt />
   </section>
+  <section class="mt-[15%]">
+    <contactUs />
+  </section>
 </template>
 
 <script>
@@ -30,6 +33,7 @@ import secContent from "./components/secContent.vue";
 import portfolioCnt from "./components/portfolioCnt.vue";
 import eyseOnCnt from "./components/eyseOnCnt.vue";
 import faQsCnt from "./components/faQsCnt.vue";
+import contactUs from "./components/contactUs.vue";
 
 export default {
   components: {
@@ -40,6 +44,7 @@ export default {
     portfolioCnt,
     eyseOnCnt,
     faQsCnt,
+    contactUs,
   },
 };
 </script>
