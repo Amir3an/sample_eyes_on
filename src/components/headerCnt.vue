@@ -24,7 +24,7 @@
         </h2>
       </div>
       <victot1
-        class="absolute w-[13.54288rem] top-0 h-[28.60231rem] blur-2xl left-[41.5%]"
+        class="absolute w-[13.54288rem] top-5 h-[28.60231rem] blur-xl left-[41.5%]"
       />
 
       <!-- منو -->
