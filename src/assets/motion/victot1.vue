@@ -19,7 +19,6 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(108.529 39.3144) scale(105.917 223.484)"
       >
-      
         <stop offset="0.03" stop-color="white" />
         <stop offset="0.13" stop-color="white" stop-opacity="0.81" />
         <stop offset="0.26" stop-color="white" stop-opacity="0.6" />
@@ -34,6 +33,4 @@
   </svg>
 </template>
 
-<style>
-
-</style>
+<style></style>
