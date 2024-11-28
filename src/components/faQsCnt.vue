@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-[80%] justify-between m-auto">
     <!-- بخش سمت چپ -->
-    <article class="w-[30%] flex flex-col gap-8">
+    <article class="w-[25%] flex flex-col gap-8">
       <h2 class="text-5xl font-bold">FAQs</h2>
       <p class="text-xl">
         Detailed information about our motion graphics and animation services,
