@@ -23,9 +23,13 @@
           EyesOn
         </h2>
       </div>
+      <victot1
+        class="absolute w-[13.54288rem] top-0 h-[28.60231rem] blur-2xl left-[41.5%]"
+      />
 
       <!-- منو -->
-      <ul class="flex w-[395px] ml-24 justify-between">
+
+      <ul class="flex w-[395px] ml-5 justify-between">
         <li>
           <a class="text-xl font-normal cursor-pointer text-[#FFFFFF]">Home</a>
         </li>
@@ -64,9 +68,11 @@
 
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
+import victot1 from "../assets/motion/victot1.vue";
 export default {
   components: {
     EyesOn,
+    victot1,
   },
   data() {
     return {
