@@ -36,6 +36,7 @@
         <img
           class="w-[50%] h-full rounded-3xl object-cover"
           src="../assets/img/card.png"
+          alt="card"
         />
       </div>
     </div>
@@ -67,6 +68,7 @@
         <img
           class="w-[50%] h-full rounded-3xl object-cover"
           src="../assets/img/card2.png"
+          alt="card2"
         />
       </div>
     </div>
