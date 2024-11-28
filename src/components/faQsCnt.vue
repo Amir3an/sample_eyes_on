@@ -1,7 +1,7 @@
 <template>
-  <div class="flex w-[80%] bg-red-200 justify-between m-auto">
+  <div class="flex w-[80%] justify-between m-auto">
     <!-- بخش سمت چپ -->
-    <article class="w-[30%] flex flex-col gap-12">
+    <article class="w-[30%] flex flex-col gap-8">
       <h2 class="text-5xl font-bold">FAQs</h2>
       <p class="text-xl">
         Detailed information about our motion graphics and animation services,
@@ -15,7 +15,7 @@
       <details
         v-for="(item, index) in questions"
         :key="index"
-        class="faq-item rounded-lg bg-[#05393024] text-white p-4 group"
+        class="faq-item bg-[#05393024] text-white p-4 group"
         @toggle="handleToggle($event)"
       >
         <!-- هدر سوال -->
@@ -53,7 +53,7 @@ export default {
         {
           question: "What is SEO, and why is it important?",
           answer:
-            "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in search engine result pages...",
+            "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in search engine result pages...SEO is important because it helps drive organic traffic to your site, increasing visibility and conversions",
         },
         {
           question: "How does SEO help my website?",
