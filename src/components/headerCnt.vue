@@ -56,7 +56,7 @@
           <p
             v-for="(text, index) in texts"
             :key="index"
-            class="text-lg pt-1 font-bold text-[#F1EDBA] flex items-center justify-center"
+            class="text-lg pt-1 text-[#F1EDBA] flex items-center justify-center"
           >
             {{ text }}
           </p>
