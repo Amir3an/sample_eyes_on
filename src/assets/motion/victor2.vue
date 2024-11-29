@@ -1,11 +1,7 @@
 <template>
-    <div class="w-[80%]"></div>
+  <div class="w-[80%]"></div>
 </template>
 
-<script>
-</script>
+<script></script>
 
-<style scoped>
-
-</style>
-
+<style scoped></style>
