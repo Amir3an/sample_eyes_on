@@ -54,7 +54,12 @@
     </form>
   </div>
   <div
-    class="absolute top-0 left-[50%] w-[114.76px] h-[1079.27px] rotate-45 bg-red-100"
+    id="vector"
+    class="absolute top-0 left-[50%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
+  ></div>
+  <div
+    id="vector-2"
+    class="absolute top-0 left-[60%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
 </template>
 
@@ -73,5 +78,22 @@ div {
 
 input {
   color: #ffffff;
+}
+
+#vector {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  filter: blur(8px);
+}
+#vector-2 {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  filter: blur(8px);
 }
 </style>
