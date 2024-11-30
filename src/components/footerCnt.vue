@@ -1,7 +1,7 @@
-<template></template>
+<template>
+  <div class="absolute top-0 right-0  w-[114.76px] h-[1079.27px] bg-red-100"></div>
+</template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
-<style></style>
+<style scoped></style>

@@ -93,4 +93,8 @@ body {
   background: #707070;
   border-radius: 1rem;
 }
+
+footer {
+  position: relative;
+}
 </style>
