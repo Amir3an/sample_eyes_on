@@ -20,7 +20,7 @@
   <section>
     <faQsCnt />
   </section>
-  <section class="mt-[15%]">
+  <section id="contactUs" class="mt-[15%]">
     <contactUs />
   </section>
   <footer>
@@ -94,7 +94,7 @@ body {
   border-radius: 1rem;
 }
 
-footer {
+#contactUs {
   position: relative;
 }
 </style>
