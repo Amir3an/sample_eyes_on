@@ -23,6 +23,9 @@
   <section class="mt-[15%]">
     <contactUs />
   </section>
+  <footer>
+    <footerCnt />
+  </footer>
 </template>
 
 <script>
@@ -34,6 +37,7 @@ import portfolioCnt from "./components/portfolioCnt.vue";
 import eyseOnCnt from "./components/eyseOnCnt.vue";
 import faQsCnt from "./components/faQsCnt.vue";
 import contactUs from "./components/contactUs.vue";
+import footerCnt from "./components/footerCnt.vue";
 
 export default {
   components: {
@@ -45,6 +49,7 @@ export default {
     eyseOnCnt,
     faQsCnt,
     contactUs,
+    footerCnt,
   },
 };
 </script>
