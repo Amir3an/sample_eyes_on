@@ -27,9 +27,13 @@
               animation services, including examples and benefits.
             </p>
             <button
-              class="w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+              class="flex items-center justify-evenly w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
             >
-              View Project
+              View More
+              <span
+                class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
+                ><arrowRight
+              /></span>
             </button>
           </div>
         </div>
