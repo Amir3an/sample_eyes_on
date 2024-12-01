@@ -19,7 +19,7 @@
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
-          <img class="w-10 h-10" src="../assets/svg-icon/Vector.png" alt="" />
+          <person />
           <span class="text-xl font-semibold text-white">
             Increase<br />
             Engagement
@@ -73,7 +73,11 @@
   </div>
 </template>
 <script>
+import person from "../assets/svg-icon/person.vue";
 export default {
+  components: {
+    person,
+  },
   data() {
     return {
       isVisible: false, // مدیریت نمایش متن
