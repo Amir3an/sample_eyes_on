@@ -51,6 +51,7 @@
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
+          <DesignTools />
           <span class="text-xl font-semibold text-white">
             Increase<br />
             Engagement
@@ -79,6 +80,7 @@ import Person from "../assets/svg-icon/Person.vue";
 import Globe from "../assets/svg-icon/Globe.vue";
 import FavoriteChart from "../assets/svg-icon/favorite-chart.vue";
 import DesignTools from "../assets/svg-icon/designtools.vue";
+
 export default {
   components: {
     Person,
