@@ -77,14 +77,14 @@
 <script>
 import Person from "../assets/svg-icon/Person.vue";
 import Globe from "../assets/svg-icon/Globe.vue";
-import favoriteChart from "../assets/svg-icon/favorite-chart.vue";
-import designtoolsVue from '../assets/svg-icon/designtools.vue';
+import FavoriteChart from "../assets/svg-icon/favorite-chart.vue";
+import DesigntoolsVue from "../assets/svg-icon/designtools.vue";
 export default {
   components: {
     Person,
     Globe,
-    favoriteChart,
-    designtoolsVue
+    FavoriteChart,
+    DesigntoolsVue,
   },
   data() {
     return {
