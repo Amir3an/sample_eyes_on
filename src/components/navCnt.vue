@@ -17,10 +17,10 @@
       <div class="w-[553px] flex items-center justify-between">
         <p
           id="card"
-          class="w-[156px] h-[154px] p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+          class="w-[156px] h-[154px] flex flex-col p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
           <Person />
-          <span class="text-xl mt-10 font-semibold text-white">
+          <span class="text-xl mt-4 font-semibold text-white">
             Increase<br />
             Engagement
           </span>
