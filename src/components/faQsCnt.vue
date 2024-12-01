@@ -24,7 +24,7 @@
         >
           <span>{{ index + 1 }}) {{ item.question }}</span>
           <span
-            class="relative flex items-center justify-center w-8 h-8 rounded-full text-center border border-[#EEE8A9] bg-[#292D32] group-open:bg-[#005555] transition-colors"
+            class="relative flex items-center justify-center w-8 h-8 rounded-full text-center border border-[#EEE8A9] bg-[#71C3D033] group-open:transition-colors"
           >
             <!-- علامت پلاس -->
             <span
