@@ -78,11 +78,13 @@
 import Person from "../assets/svg-icon/Person.vue";
 import Globe from "../assets/svg-icon/Globe.vue";
 import favoriteChart from "../assets/svg-icon/favorite-chart.vue";
+import designtoolsVue from '../assets/svg-icon/designtools.vue';
 export default {
   components: {
     Person,
     Globe,
     favoriteChart,
+    designtoolsVue
   },
   data() {
     return {
