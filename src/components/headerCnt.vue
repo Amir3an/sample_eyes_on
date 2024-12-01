@@ -1,5 +1,4 @@
 <template>
- <img src="../assets/motion/header-motion.png" />
  <div class="relative">
     <!-- تصویر پس‌زمینه -->
     <img
