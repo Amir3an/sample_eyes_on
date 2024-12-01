@@ -17,17 +17,17 @@
       <div class="w-[553px] flex items-center justify-between">
         <p
           id="card"
-          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+          class="w-[156px] h-[154px] p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
           <Person />
-          <span class="text-xl font-semibold text-white">
+          <span class="text-xl mt-10 font-semibold text-white">
             Increase<br />
             Engagement
           </span>
         </p>
         <p
           id="card"
-          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+          class="w-[156px] h-[154px] p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
           <Globe />
           <span class="text-xl font-semibold text-white">
@@ -37,7 +37,7 @@
         </p>
         <p
           id="card"
-          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+          class="w-[156px] h-[154px] p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
           <favoriteChart />
           <span class="text-xl font-semibold text-white">
@@ -49,7 +49,7 @@
       <div class="w-[353px] mt-8 flex items-center justify-between">
         <p
           id="card"
-          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+          class="w-[156px] h-[154px] p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
           <Chart />
           <span class="text-xl font-semibold text-white">
@@ -59,7 +59,7 @@
         </p>
         <p
           id="card"
-          class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
+          class="w-[156px] h-[154px] p-3 bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
           <DesignTools />
           <span class="text-xl font-semibold text-white">
