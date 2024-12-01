@@ -130,6 +130,7 @@ export default {
 <style scoped>
 /* استایل‌های اصلی */
 #cnt {
+  background: url("../assets/motion/header-motion.png");
   transition: transform 1s, opacity 1s ease-in-out;
   opacity: 0;
   transform: translateY(-80px);
