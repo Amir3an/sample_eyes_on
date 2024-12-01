@@ -3,7 +3,7 @@
     <!-- تصویر پس‌زمینه -->
     <img
       class="z-[-99] object-cover mt-20 w-full h-full"
-      src="../assets/img/1.png"
+      src="../assets/img/2.png"
       alt="Background"
     />
 
