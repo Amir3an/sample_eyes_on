@@ -1,5 +1,5 @@
 <template>
- <div class="relative">
+  <div class="relative">
     <!-- تصویر پس‌زمینه -->
     <img
       class="z-[-99] object-cover mt-20 w-full h-full"
