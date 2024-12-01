@@ -3,9 +3,13 @@
     <div class="w-full flex justify-between">
       <h2 class="text-5xl font-bold">Key Projects & Case Studies</h2>
       <button
-        class="w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+        class="flex items-center justify-evenly w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
       >
         View More
+        <span
+          class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
+          ><arrowRight
+        /></span>
       </button>
     </div>
 
@@ -27,9 +31,9 @@
               animation services, including examples and benefits.
             </p>
             <button
-              class="flex items-center justify-evenly w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+              class="flex items-center justify-evenly w-52 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
             >
-              View More
+              View Project
               <span
                 class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
                 ><arrowRight
@@ -63,9 +67,9 @@
               animation services, including examples and benefits.
             </p>
             <button
-              class="flex items-center justify-evenly w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+              class="flex items-center justify-evenly w-52 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
             >
-              View More
+              View Project
               <span
                 class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
                 ><arrowRight
