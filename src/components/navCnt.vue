@@ -19,7 +19,7 @@
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
-          <person />
+          <Person />
           <span class="text-xl font-semibold text-white">
             Increase<br />
             Engagement
@@ -29,6 +29,7 @@
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
+          <Globe />
           <span class="text-xl font-semibold text-white">
             Increase<br />
             Engagement
@@ -73,10 +74,12 @@
   </div>
 </template>
 <script>
-import person from "../assets/svg-icon/person.vue";
+import Person from "../assets/svg-icon/Person.vue";
+import Globe from "../assets/svg-icon/Globe.vue";
 export default {
   components: {
-    person,
+    Person,
+    Globe,
   },
   data() {
     return {
