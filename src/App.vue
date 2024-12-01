@@ -72,6 +72,10 @@ export default {
   width: 100%;
   height: 100%;
   margin: auto;
+
+  @media screen and (min-width: 1920px) {
+    width: 1920px;
+  }
 }
 
 body {
