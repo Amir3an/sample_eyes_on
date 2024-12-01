@@ -1,6 +1,6 @@
 <template>
-  <div class="w-[80%] m-auto">
-    <img class="w-full h-auto" src="../assets/img/3.png" alt="img3" />
+  <div class="w-[110%] m-auto">
+    <img class="w-full h-auto m-auto" src="../assets/img/3.png" alt="img3" />
   </div>
 </template>
 
