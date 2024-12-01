@@ -39,6 +39,7 @@
           id="card"
           class="w-[156px] h-[154px] bg-[#70F9E01A] backdrop-blur-[21px] rounded-2xl"
         >
+          <favoriteChart />
           <span class="text-xl font-semibold text-white">
             Increase<br />
             Engagement
