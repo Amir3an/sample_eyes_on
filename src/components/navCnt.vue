@@ -76,10 +76,12 @@
 <script>
 import Person from "../assets/svg-icon/Person.vue";
 import Globe from "../assets/svg-icon/Globe.vue";
+import favoriteChart from "../assets/svg-icon/favorite-chart.vue";
 export default {
   components: {
     Person,
     Globe,
+    favoriteChart,
   },
   data() {
     return {
