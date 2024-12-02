@@ -1,5 +1,6 @@
 <template>
   <div class="relative">
+    <headerMotion class="absolute" />
     <!-- تصویر پس‌زمینه -->
     <img
       class="z-[-99] object-cover mt-10 w-full h-full"
