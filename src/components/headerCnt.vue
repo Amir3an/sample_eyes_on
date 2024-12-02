@@ -54,6 +54,16 @@
       <!-- متن متحرک با انیمیشن translateY -->
       <div class="relative items-center overflow-hidden h-8">
         <div
+          style="
+            width: 540.61px;
+            height: 586.66px;
+            opacity: 0.3;
+            background: rgba(0, 171, 190, 0.5);
+            box-shadow: 200px 200px 200px;
+            filter: blur(200px);
+          "
+        ></div>
+        <div
           class="relative transition-all mt-0 duration-700 leading-none ease-in-out"
           :style="{
             transform: `translateY(${activeIndex * -16.2}%)`,
@@ -75,12 +85,10 @@
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
 import victot1 from "../assets/motion/victot1.vue";
-import motionHeader1 from "../assets/motion/header-motion-1.vue";
 export default {
   components: {
     EyesOn,
     victot1,
-    motionHeader1,
   },
   data() {
     return {
