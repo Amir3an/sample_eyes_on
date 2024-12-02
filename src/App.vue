@@ -80,6 +80,7 @@ export default {
 
 body {
   background-color: rgba(0, 0, 12, 1);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
