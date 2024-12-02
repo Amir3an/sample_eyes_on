@@ -2,7 +2,7 @@
   <div class="relative">
     <!-- تصویر پس‌زمینه -->
     <img
-      class="z-[-99] object-cover mt-30 w-full h-full"
+      class="z-[-99] object-cover mt-10 w-full h-full"
       src="../assets/img/2.png"
       alt="Background"
     />
@@ -18,7 +18,7 @@
       id="cnt"
       ref="observeItem"
       :class="{ visible: isVisible }"
-      class="w-[80%] absolute left-[10%] top-16 bg-red-200 flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
+      class="w-[80%] absolute left-[10%] top-2 flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
     >
       <!-- متن لوگو -->
       <div class="flex flex-shrink-0 gap-2 items-center text-white">
