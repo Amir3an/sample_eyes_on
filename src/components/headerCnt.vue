@@ -18,7 +18,7 @@
       id="cnt"
       ref="observeItem"
       :class="{ visible: isVisible }"
-      class="w-[80%] absolute left-[10%] top-2 flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
+      class="w-[80%] absolute left-[10%] top-[8px] flex items-center justify-between h-10 opacity-0 transform -translate-y-20 transition-all duration-1000"
     >
       <!-- متن لوگو -->
       <div class="flex flex-shrink-0 gap-2 items-center text-white">
@@ -75,10 +75,12 @@
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
 import victot1 from "../assets/motion/victot1.vue";
+import motionHeader1 from "../assets/motion/header-motion-1.vue";
 export default {
   components: {
     EyesOn,
     victot1,
+    motionHeader1
   },
   data() {
     return {

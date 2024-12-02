@@ -40,11 +40,4 @@
 </template>
 
 <style soped>
-svg {
-  width: 33.78831rem;
-  height: 36.66613rem;
-  fill: rgba(0, 171, 190, 0.5);
-  opacity: 0.3;
-  filter: blur(100px);
-}
 </style>
