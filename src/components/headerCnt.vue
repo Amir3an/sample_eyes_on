@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <headerMotion class="absolute" />
+    <headerMotion class="absolute z-[-9]" />
     <!-- تصویر پس‌زمینه -->
     <img
       class="z-[-99] object-cover mt-10 w-full h-full"
