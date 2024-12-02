@@ -3,7 +3,7 @@
     <headerMotion class="absolute" />
     <!-- تصویر پس‌زمینه -->
     <img
-      class="object-cover mt-10 w-full h-full"
+      class="object-cover mt-10 w-full h-full brightness-50"
       src="../assets/img/2.png"
       alt="Background"
     />
