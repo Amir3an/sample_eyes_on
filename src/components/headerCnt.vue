@@ -1,6 +1,5 @@
 <template>
   <div class="relative">
-    
     <!-- تصویر پس‌زمینه -->
     <img
       class="z-[-99] object-cover mt-10 w-full h-full"
@@ -75,10 +74,12 @@
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
 import victot1 from "../assets/motion/victot1.vue";
+import headerMotion from '../assets/motion/headerMotion.vue';
 export default {
   components: {
     EyesOn,
     victot1,
+    headerMotion
   },
   data() {
     return {
