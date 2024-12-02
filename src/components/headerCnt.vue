@@ -80,7 +80,7 @@ export default {
   components: {
     EyesOn,
     victot1,
-    motionHeader1
+    motionHeader1,
   },
   data() {
     return {
