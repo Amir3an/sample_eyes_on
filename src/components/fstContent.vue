@@ -1,7 +1,6 @@
 <template>
   <div class="w-[80%] flex justify-between m-auto">
     <div class="flex flex-col">
-      <ServicesMotions />
       <EyseOnServices class="w-52 h-52 opacity-10" />
       <div class="flex flex-col gap-7 mt-[-1rem]">
         <h2 class="text-5xl font-bold mb-4">Services</h2>
@@ -57,7 +56,7 @@ export default {
   components: {
     arrowRight,
     EyseOnServices,
-    ServicesMotions
+    ServicesMotions,
   },
 };
 </script>
