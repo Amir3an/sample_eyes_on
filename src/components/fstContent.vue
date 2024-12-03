@@ -50,11 +50,13 @@
 
 <script>
 import EyseOnServices from "../assets/svg-icon/EyseOn-Services.vue";
+import ServicesMotions from "../assets/motion/services-motion.vue";
 import arrowRight from "../assets/svg-icon/arrow-right.vue";
 export default {
   components: {
     arrowRight,
     EyseOnServices,
+    ServicesMotions
   },
 };
 </script>
