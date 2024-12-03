@@ -87,8 +87,7 @@ button {
   background-color: #71c3d04d;
   transform: rotate(-130.91deg);
   filter: blur(113px);
-  border-radius: 12px; /* گرد کردن گوشه‌ها */
-  padding: 16px;
+  border-radius: 25rem; /* گرد کردن گوشه‌ها */
   z-index: -9;
 }
 </style>
