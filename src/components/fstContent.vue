@@ -46,10 +46,12 @@
 </template>
 
 <script>
+import EyseOnServices from "../assets/svg-icon/EyseOn-Services.vue"
 import arrowRight from "../assets/svg-icon/arrow-right.vue";
 export default {
   components: {
     arrowRight,
+    EyseOnServices
   },
 };
 </script>
