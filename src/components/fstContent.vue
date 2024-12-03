@@ -1,6 +1,7 @@
 <template>
   <div class="w-[80%] flex justify-between m-auto">
-    <div class="flex flex-col">
+    <div class="relative flex flex-col">
+      <div id="blur-2"></div>
       <EyseOnServices class="w-52 h-52 opacity-10" />
       <div class="flex flex-col gap-7 mt-[-1rem]">
         <h2 class="text-5xl font-bold mb-4">Services</h2>
@@ -75,5 +76,19 @@ button {
 
 #img {
   background: url("../assets/img/eyseOn1.png");
+}
+
+#blur-2 {
+  position: absolute;
+  top: -6rem;
+  left: -17rem;
+  width: 430px;
+  height: 200.16px;
+  background-color: #71c3d04d;
+  transform: rotate(-130.91deg);
+  filter: blur(113px);
+  border-radius: 12px; /* گرد کردن گوشه‌ها */
+  padding: 16px;
+  z-index: -9;
 }
 </style>
