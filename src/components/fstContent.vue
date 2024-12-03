@@ -1,21 +1,24 @@
 <template>
   <div class="w-[80%] flex justify-between m-auto">
-    <div class="flex flex-col gap-8">
-      <h2 class="text-5xl font-bold mb-4">Services</h2>
-      <p class="text-xl">
-        Detailed infortmation about our motion graphics and<br />
-        animation services, including examples and benefits.
-      </p>
+    <div class="flex flex-col">
+      <EyseOnServices class="w-52 h-52 opacity-10" />
+      <div class="flex flex-col gap-7 mt-[-1rem]">
+        <h2 class="text-5xl font-bold mb-4">Services</h2>
+        <p class="text-xl">
+          Detailed infortmation about our motion graphics and<br />
+          animation services, including examples and benefits.
+        </p>
 
-      <button
-        class="flex items-center justify-evenly w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
-      >
-        View More
-        <span
-          class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
-          ><arrowRight
-        /></span>
-      </button>
+        <button
+          class="flex items-center justify-evenly w-44 h-14 text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+        >
+          View More
+          <span
+            class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
+            ><arrowRight
+          /></span>
+        </button>
+      </div>
     </div>
 
     <div class="w-[594px] h-auto">
@@ -46,12 +49,12 @@
 </template>
 
 <script>
-import EyseOnServices from "../assets/svg-icon/EyseOn-Services.vue"
+import EyseOnServices from "../assets/svg-icon/EyseOn-Services.vue";
 import arrowRight from "../assets/svg-icon/arrow-right.vue";
 export default {
   components: {
     arrowRight,
-    EyseOnServices
+    EyseOnServices,
   },
 };
 </script>
