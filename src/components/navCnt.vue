@@ -151,12 +151,12 @@ span {
 
 #card-background {
   position: absolute;
-  top: -2rem;
-  left: 0rem;
+  top: -1.5rem;
+  left: 1rem;
   width: 330px;
-  height: 409.16px;
+  height: 359.16px;
   background-color: #71c3d04d;
-  transform: rotate(-90.91deg);
+  transform: rotate(-55deg);
   filter: blur(113px); /* میزان تاری */
   border-radius: 12px; /* گرد کردن گوشه‌ها */
   padding: 16px;
