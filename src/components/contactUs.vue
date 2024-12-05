@@ -47,9 +47,13 @@
         </div>
       </div>
       <button
-        class="w-[183px] text-xl mt-5 h-14 bg-[#002C3F] border border-[#F1EDBA] rounded-[32px]"
+        class="flex items-center justify-evenly w-[183px] mt-5 h-14 border border-[#F1EDBA] text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
       >
         Send Form
+        <span
+          class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
+          ><arrowRight
+        /></span>
       </button>
     </form>
   </div>
@@ -68,7 +72,13 @@
 </template>
 
 <script>
-export default {};
+import arrowRight from "../assets/svg-icon/arrow-right.vue";
+
+export default {
+  components: {
+    arrowRight,
+  },
+};
 </script>
 
 <style scoped>
