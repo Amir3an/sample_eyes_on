@@ -74,7 +74,7 @@
   ></div>
   <div
     id="vector-3"
-    class="absolute top-0 left-[90%] w-[159.13px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[83%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
 </template>
 
@@ -120,6 +120,16 @@ input {
   opacity: 0.5;
 }
 #vector-3 {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  filter: blur(8px);
+  opacity: 0.5;
+}
+
+#vector-4 {
   background: linear-gradient(
     35deg,
     rgba(30, 120, 101, 0.212) 0%,
