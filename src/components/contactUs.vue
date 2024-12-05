@@ -107,7 +107,6 @@ input {
     rgba(30, 120, 101, 0.212) 0%,
     rgba(83, 162, 255, 0) 100%
   );
-  filter: blur(8px);
   opacity: 0.5;
 }
 #vector-2 {
@@ -116,7 +115,6 @@ input {
     rgba(30, 120, 101, 0.212) 0%,
     rgba(83, 162, 255, 0) 100%
   );
-  filter: blur(8px);
   opacity: 0.5;
 }
 #vector-3 {
@@ -125,7 +123,6 @@ input {
     rgba(30, 120, 101, 0.212) 0%,
     rgba(83, 162, 255, 0) 100%
   );
-  filter: blur(8px);
   opacity: 0.5;
 }
 
@@ -135,7 +132,6 @@ input {
     rgba(30, 120, 101, 0.212) 0%,
     rgba(83, 162, 255, 0) 100%
   );
-  filter: blur(8px);
   opacity: 0.5;
 }
 </style>
