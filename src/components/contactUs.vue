@@ -73,7 +73,7 @@
     class="absolute top-0 left-[70%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
-    id="vector3"
+    id="vector-3"
     class="absolute top-0 left-[90%] w-[159.13px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
 </template>
@@ -119,7 +119,7 @@ input {
   filter: blur(8px);
   opacity: 0.5;
 }
-#vector3 {
+#vector-3 {
   background: linear-gradient(
     35deg,
     rgba(30, 120, 101, 0.212) 0%,
