@@ -47,7 +47,7 @@
         </div>
       </div>
       <button
-        class="flex items-center justify-evenly w-[183px] mt-5 h-14 border border-[#F1EDBA] text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+        class="flex items-center pt-1 justify-evenly w-[183px] mt-5 h-14 border border-[#F1EDBA] text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
       >
         Send Form
         <span
