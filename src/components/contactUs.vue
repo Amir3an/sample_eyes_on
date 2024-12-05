@@ -6,6 +6,7 @@
         <div class="w-[48%] flex flex-col">
           <label for="username" class="text-xl">First Name</label>
           <input
+            placeholder="Sara"
             id="username"
             class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
             type="text"
@@ -14,6 +15,7 @@
         <div class="w-[48%] flex flex-col">
           <label for="lastusername" class="text-xl">Last Name</label>
           <input
+            placeholder="Abbaszabeh"
             id="lastusername"
             class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
             type="text"
@@ -23,6 +25,7 @@
       <div class="w-full mt-[5%] flex flex-col">
         <lable for="emailaddres" class="text-xl">Email Address</lable>
         <input
+          placeholder="__________________@gmail.com"
           id="emailaddres"
           class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
           type="text"
