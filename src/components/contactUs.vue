@@ -69,6 +69,10 @@
     class="absolute top-0 left-[62%] w-[198px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
+    id="vector-2"
+    class="absolute top-0 left-[62%] w-[198px] h-[1079.27px] blur-[12px] rotate-45"
+  ></div>
+  <div
     id="vector"
     class="absolute top-0 left-[70%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
