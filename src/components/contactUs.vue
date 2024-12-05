@@ -1,7 +1,7 @@
 <template>
   <div class="w-[80%] m-auto">
     <h2 class="text-[56px] font-bold leading-tight w-[100%]">Contact us</h2>
-    <form class="w-[60%] p-8 mt-[5%] h-auto rounded-3xl bg-[#70F9E014]">
+    <form class="w-[816px] p-8 mt-[5%] h-auto rounded-3xl bg-[#70F9E014]">
       <div class="flex items-center justify-between">
         <div class="w-[48%] flex flex-col">
           <label for="username" class="text-xl">First Name</label>
