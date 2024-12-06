@@ -11,16 +11,13 @@
         640: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
       }"
-      :navigation="{
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }"
+      navigation
       loop
     >
       <swiper-slide v-for="(item, index) in slides" :key="index">
         <div class="rounded-lg shadow-lg overflow-hidden">
           <img
-            :src="item.image"
+            src="../assets/img/slider3.png"
             alt="Design"
             class="w-full h-48 object-cover"
           />
@@ -57,19 +54,19 @@ export default {
     return {
       slides: [
         {
-          image: require("@/assets/img/slide1.png"),
+          image: "@/assets/img/slide1.png",
           title: "A brand 3D Design Characteristic for growth",
         },
         {
-          image: require("@/assets/img/slide2.png"),
+          image: "@/assets/img/slide2.png",
           title: "A brand 3D Design Characteristic for growth",
         },
         {
-          image: require("@/assets/img/slide3.png"),
+          image: "@/assets/img/slide3.png",
           title: "A brand 3D Design Characteristic for growth",
         },
         {
-          image: require("@/assets/img/slide4.png"),
+          image: "@/assets/img/slide4.png",
           title: "A brand 3D Design Characteristic for growth",
         },
       ],
@@ -89,15 +86,5 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-.swiper-button-prev {
-  left: -50px;
-}
-.swiper-button-next {
-  right: -50px;
 }
 </style>
