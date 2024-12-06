@@ -52,15 +52,15 @@ export default {
     return {
       slides: [
         {
-          image: "../assets/img/slide1.png",
+          image: "@/assets/img/slide1.png",
           title: "A brand 3D Design Characteristic for growth",
         },
         {
-          image: "../assets/img/slide2.png",
+          image: "@/assets/img/slide2.png",
           title: "A brand 3D Design Characteristic for growth",
         },
         {
-          image: "../assets/img/slide3.png",
+          image: "@/assets/img/slide3.png",
           title: "A brand 3D Design Characteristic for growth",
         },
       ],
