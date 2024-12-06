@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-slider bg-gray-900 text-white p-8">
+  <div class="relative portfolio-slider bg-gray-900 text-white p-8">
     <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
     <swiper
       :slides-per-view="1"
