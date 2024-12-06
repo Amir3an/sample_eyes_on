@@ -15,7 +15,7 @@
       <swiper-slide v-for="(item, index) in slides" :key="index">
         <div class="rounded-lg shadow-lg overflow-hidden">
           <img
-            :src="item.image"
+            src="../assets/img/slider3.png"
             alt="Design"
             class="w-full h-48 object-cover"
           />
@@ -61,6 +61,10 @@ export default {
         },
         {
           image: "@/assets/img/slide3.png",
+          title: "A brand 3D Design Characteristic for growth",
+        },
+        {
+          image: "@/assets/img/slide4.png",
           title: "A brand 3D Design Characteristic for growth",
         },
       ],
