@@ -11,9 +11,9 @@
   <section class="mt-[15%]">
     <secContent />
   </section>
-  <!-- <section class="mt-[13%]">
+  <section class="mt-[13%]">
     <portfolioCnt />
-  </section> -->
+  </section>
   <section>
     <eyseOnCnt />
   </section>
