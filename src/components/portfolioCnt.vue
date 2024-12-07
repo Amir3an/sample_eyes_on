@@ -14,12 +14,8 @@
       navigation
       loop
     >
-      <swiper-slide
-        class="h-[395px]"
-        v-for="(item, index) in slides"
-        :key="index"
-      >
-        <div class="rounded-lg shadow-lg overflow-hidden">
+      <swiper-slide v-for="(item, index) in slides" :key="index">
+        <div class="rounded-lg h-[395px] shadow-lg overflow-hidden">
           <img
             src="../assets/img/slider3.png"
             alt="Design"
