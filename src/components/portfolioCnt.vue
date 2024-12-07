@@ -19,7 +19,7 @@
       >
         <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
           <img
-            src="../assets/img/slider3.png"
+            :src="item.image"
             alt="Design"
             class="w-full h-[395px] object-cover rounded-3xl"
           />
@@ -56,20 +56,20 @@ export default {
     return {
       slides: [
         {
-          image: "@/assets/img/slide1.png",
-          title: "A brand 3D Design Characteristic for growth",
+          image: "../../assets/img/slider1.png",
+          title: "A brand 3d Design Characteristic for growth",
         },
         {
           image: "@/assets/img/slide2.png",
-          title: "A brand 3D Design Characteristic for growth",
+          title: "A brand 3d Design Characteristic for growth",
         },
         {
           image: "@/assets/img/slide3.png",
-          title: "A brand 3D Design Characteristic for growth",
+          title: "A brand 3d Design Characteristic for growth",
         },
         {
           image: "@/assets/img/slide4.png",
-          title: "A brand 3D Design Characteristic for growth",
+          title: "A brand 3d Design Characteristic for growth",
         },
       ],
     };
