@@ -19,12 +19,11 @@
             alt="Design"
             class="w-full h-[395px] object-cover"
           />
-          <!-- <div class="p-4 bg-gradient-to-b from-gray-800 to-gray-900">
-            <p class="text-sm uppercase text-gray-400">Graphic Design</p>
-            <h3 class="text-lg font-semibold">{{ item.title }}</h3>
-          </div> -->
         </div>
-        <p id="glass"></p>
+        <div id="glass">
+          <p class="text-sm uppercase text-[#F1EDBA]">Graphic Design</p>
+          <h3 class="text-lg font-semibold">{{ item.title }}</h3>
+        </div>
       </swiper-slide>
     </swiper>
 
@@ -89,6 +88,7 @@ export default {
 
 #glass {
   position: absolute;
+  padding: 2rem;
   bottom: 0.7rem;
   right: -0.5rem;
   width: 410px;
