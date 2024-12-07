@@ -12,6 +12,7 @@
       </div>
     </div>
     <swiper
+      :modules="[Navigation]"
       :slides-per-view="1"
       :space-between="135"
       :breakpoints="{
@@ -20,6 +21,10 @@
         1024: { slidesPerView: 3 },
       }"
       loop
+      :navigation="{
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+      }"
     >
       <swiper-slide
         class="rounded-3xl"
@@ -28,7 +33,7 @@
       >
         <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
           <img
-            src="../assets/img/slide1.png"
+            :src="item.image"
             alt="Design"
             class="w-full h-[395px] object-cover rounded-3xl"
           />
@@ -44,8 +49,15 @@
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation } from "swiper/modules"; // Import Navigation module correctly
 import "swiper/css";
 import "swiper/css/navigation";
+
+// Static imports for images
+import slide1 from "@/assets/img/slide1.png";
+import slide2 from "@/assets/img/slider2.png";
+import slide3 from "@/assets/img/slider3.png";
+import slide4 from "@/assets/img/slider4.png";
 
 export default {
   components: {
@@ -56,19 +68,19 @@ export default {
     return {
       slides: [
         {
-          image: "@/assets/img/slide1.png",
+          image: slide1,
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "@/assets/img/slider2.png",
+          image: slide2,
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "@/assets/img/slider3.png",
+          image: slide3,
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "@/assets/img/slider4.png",
+          image: slide4,
           title: "A brand 3d Design Characteristic for growth",
         },
       ],
