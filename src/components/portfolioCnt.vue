@@ -92,6 +92,7 @@ export default {
 
 #glass {
   position: absolute;
+  padding-top: 1rem;
   padding-inline: 2rem;
   bottom: 0.7rem;
   right: -5%;
