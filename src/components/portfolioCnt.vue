@@ -3,10 +3,10 @@
     <div class="w-full">
       <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
       <div class="swiper-navigation">
-        <button class="swiper-button-prev" aria-label="Previous slide">
+        <button class="swiper-button-prev">
           <i class="fas fa-arrow-left"></i>
         </button>
-        <button class="swiper-button-next" aria-label="Next slide">
+        <button class="swiper-button-next">
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -20,12 +20,11 @@
         640: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
       }"
-      :loop="slides.length > 3"
+      loop
       :navigation="{
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next',
       }"
-      preloadImages="false"
     >
       <swiper-slide
         class="rounded-3xl"
@@ -37,12 +36,9 @@
             :src="item.image"
             alt="Design"
             class="w-full h-[395px] object-cover rounded-3xl"
-            @error="onImageError"
           />
           <div id="glass">
-            <p class="text-lg font-normal text-[#F1EDBA] font-barlow">
-              Graphic Design
-            </p>
+            <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
             <h6 class="text-xl mt-2 font-bold">{{ item.title }}</h6>
           </div>
         </div>
@@ -56,12 +52,6 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Static imports for images
-import slide1 from "../assets/img/slide1.png";
-import slide2 from "../assets/img/slider2.png";
-import slide3 from "../assets/img/slider3.png";
-import slide4 from "../assets/img/slider4.png";
-
 export default {
   components: {
     Swiper,
@@ -70,10 +60,18 @@ export default {
   data() {
     return {
       slides: [
-        { image: slide1, title: "A brand 3D design characteristic for growth" },
-        { image: slide2, title: "A brand 3D design characteristic for growth" },
-        { image: slide3, title: "A brand 3D design characteristic for growth" },
-        { image: slide4, title: "A brand 3D design characteristic for growth" },
+        {
+          title: "A brand 3d Design Characteristic for growth",
+        },
+        {
+          title: "A brand 3d Design Characteristic for growth",
+        },
+        {
+          title: "A brand 3d Design Characteristic for growth",
+        },
+        {
+          title: "A brand 3d Design Characteristic for growth",
+        },
       ],
     };
   },
