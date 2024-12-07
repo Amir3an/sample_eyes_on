@@ -7,7 +7,7 @@
       :breakpoints="{
         480: { slidesPerView: 1 },
         640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        1024: { slidesPerView: 3, spaceBetween: 50 },
       }"
       navigation
       loop
@@ -90,8 +90,8 @@ export default {
   position: absolute;
   padding: 2rem;
   bottom: 0.7rem;
-  right: -0.5rem;
-  width: 410px;
+  right: -0.5%;
+  width: 110%;
   height: 126px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
