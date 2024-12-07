@@ -13,16 +13,16 @@
       loop
     >
       <swiper-slide v-for="(item, index) in slides" :key="index">
-        <div class="rounded-lg h-[395px] shadow-lg overflow-hidden">
+        <div class="rounded-lg shadow-lg overflow-hidden">
           <img
             src="../assets/img/slider3.png"
             alt="Design"
-            class="w-full h-[80%] object-cover"
+            class="w-full h-[395px] object-cover"
           />
-          <div class="p-4 bg-gradient-to-b from-gray-800 to-gray-900">
+          <!-- <div class="p-4 bg-gradient-to-b from-gray-800 to-gray-900">
             <p class="text-sm uppercase text-gray-400">Graphic Design</p>
             <h3 class="text-lg font-semibold">{{ item.title }}</h3>
-          </div>
+          </div> -->
         </div>
       </swiper-slide>
     </swiper>
