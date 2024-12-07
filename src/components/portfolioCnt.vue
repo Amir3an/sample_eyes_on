@@ -25,7 +25,7 @@
           />
           <div id="glass">
             <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
-            <h6 class="text-xl font-bold">{{ item.title }}</h6>
+            <h6 class="text-xl mt-2 font-bold">{{ item.title }}</h6>
           </div>
         </div>
       </swiper-slide>
