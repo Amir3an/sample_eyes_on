@@ -56,19 +56,19 @@ export default {
     return {
       slides: [
         {
-          image: "../assets/img/slide1.png",
+          image: "@/assets/img/slide1.png",
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "../assets/img/slider2.png",
+          image: "@/assets/img/slider2.png",
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "../assets/img/slider3.png",
+          image: "@/assets/img/slider3.png",
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "../assets/img/slider4.png",
+          image: "@/assets/img/slider4.png",
           title: "A brand 3d Design Characteristic for growth",
         },
       ],
