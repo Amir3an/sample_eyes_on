@@ -56,19 +56,19 @@ export default {
     return {
       slides: [
         {
-          image: "../../assets/img/slider1.png",
+          image: "../assets/img/slide1.png",
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "@/assets/img/slide2.png",
+          image: "../assets/img/slider2.png",
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "@/assets/img/slide3.png",
+          image: "../assets/img/slider3.png",
           title: "A brand 3d Design Characteristic for growth",
         },
         {
-          image: "@/assets/img/slide4.png",
+          image: "../assets/img/slider4.png",
           title: "A brand 3d Design Characteristic for growth",
         },
       ],
@@ -93,6 +93,7 @@ export default {
 #glass {
   position: absolute;
   padding-inline: 2rem;
+  background-image: url("");
   bottom: 0.7rem;
   right: -5%;
   width: 110%;
