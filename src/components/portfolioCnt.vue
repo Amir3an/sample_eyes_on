@@ -13,7 +13,7 @@
       loop
     >
       <swiper-slide v-for="(item, index) in slides" :key="index">
-        <div class="rounded-lg shadow-lg overflow-hidden">
+        <div class="rounded-3xl shadow-lg overflow-hidden">
           <img
             src="../assets/img/slider3.png"
             alt="Design"
