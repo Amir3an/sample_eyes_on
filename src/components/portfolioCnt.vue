@@ -1,6 +1,6 @@
 <template>
   <div class="w-[80%] m-auto relative portfolio-slider text-white p-8">
-    <div class="w-full justify-between flex">
+    <div class="w-full">
       <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
       <div class="swiper-navigation">
         <button class="swiper-button-prev">
