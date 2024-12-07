@@ -2,7 +2,6 @@
   <div class="w-[80%] m-auto relative portfolio-slider text-white p-8">
     <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
     <swiper
-      class="p-10"
       :slides-per-view="1"
       :space-between="155"
       :breakpoints="{
