@@ -2,6 +2,7 @@
   <div class="w-[80%] m-auto relative portfolio-slider text-white p-8">
     <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
     <swiper
+      class="p-10"
       :slides-per-view="1"
       :space-between="155"
       :breakpoints="{
@@ -23,8 +24,8 @@
             <p class="text-sm uppercase text-gray-400">Graphic Design</p>
             <h3 class="text-lg font-semibold">{{ item.title }}</h3>
           </div> -->
-          <p id="glass"></p>
         </div>
+        <p id="glass"></p>
       </swiper-slide>
     </swiper>
 
@@ -89,8 +90,9 @@ export default {
 
 #glass {
   position: absolute;
-  bottom: 3rem;
-  width: 385px;
+  bottom: 0.7rem;
+  right: -0.5rem;
+  width: 410px;
   height: 126px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
