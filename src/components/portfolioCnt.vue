@@ -100,5 +100,6 @@ export default {
   background: rgba(5, 57, 48, 0.14);
   border-radius: 16px;
   backdrop-filter: blur(48px);
+  font-family: BarlowRegula;
 }
 </style>
