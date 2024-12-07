@@ -3,7 +3,7 @@
     <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
     <swiper
       :slides-per-view="1"
-      :space-between="45"
+      :space-between="155"
       :breakpoints="{
         480: { slidesPerView: 1 },
         640: { slidesPerView: 2 },
