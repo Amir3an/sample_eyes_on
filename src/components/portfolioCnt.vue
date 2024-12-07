@@ -3,10 +3,10 @@
     <div class="w-full">
       <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
       <div class="swiper-navigation">
-        <button class="swiper-button-prev" aria-label="Previous Slide">
+        <button class="swiper-button-prev" aria-label="Previous slide">
           <i class="fas fa-arrow-left"></i>
         </button>
-        <button class="swiper-button-next" aria-label="Next Slide">
+        <button class="swiper-button-next" aria-label="Next slide">
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -20,11 +20,12 @@
         640: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
       }"
-      loop
+      :loop="slides.length > 3"
       :navigation="{
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next',
       }"
+      preloadImages="false"
     >
       <swiper-slide
         class="rounded-3xl"
@@ -34,13 +35,14 @@
         <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
           <img
             :src="item.image"
-            :alt="`Portfolio slide for ${item.title}`"
+            alt="Design"
             class="w-full h-[395px] object-cover rounded-3xl"
+            @error="onImageError"
           />
-          <div
-            class="absolute pt-4 px-8 bottom-[0.7rem] right-[-5%] w-[110%] h-[126px] bg-[rgba(5,57,48,0.14)] rounded-lg backdrop-blur-[48px] font-barlow"
-          >
-            <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
+          <div id="glass">
+            <p class="text-lg font-normal text-[#F1EDBA] font-barlow">
+              Graphic Design
+            </p>
             <h6 class="text-xl mt-2 font-bold">{{ item.title }}</h6>
           </div>
         </div>
@@ -51,7 +53,6 @@
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -69,22 +70,10 @@ export default {
   data() {
     return {
       slides: [
-        {
-          image: slide1,
-          title: "A brand 3d Design Characteristic for growth",
-        },
-        {
-          image: slide2,
-          title: "A brand 3d Design Characteristic for growth",
-        },
-        {
-          image: slide3,
-          title: "A brand 3d Design Characteristic for growth",
-        },
-        {
-          image: slide4,
-          title: "A brand 3d Design Characteristic for growth",
-        },
+        { image: slide1, title: "A brand 3D design characteristic for growth" },
+        { image: slide2, title: "A brand 3D design characteristic for growth" },
+        { image: slide3, title: "A brand 3D design characteristic for growth" },
+        { image: slide4, title: "A brand 3D design characteristic for growth" },
       ],
     };
   },
@@ -102,11 +91,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: rgba(0, 0, 0, 0.7);
 }
 
 #glass {
