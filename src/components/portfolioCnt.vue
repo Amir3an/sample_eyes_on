@@ -19,7 +19,7 @@
       >
         <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
           <img
-            :src="item.image"
+            src="../assets/img/slide1.png"
             alt="Design"
             class="w-full h-[395px] object-cover rounded-3xl"
           />
