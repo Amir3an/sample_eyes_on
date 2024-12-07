@@ -20,6 +20,10 @@
         1024: { slidesPerView: 3 },
       }"
       loop
+      :navigation="{
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+      }"
     >
       <swiper-slide
         class="rounded-3xl"
@@ -45,6 +49,8 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
+
+import slid1 from "../assets/img/";
 
 export default {
   components: {
