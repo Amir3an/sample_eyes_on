@@ -3,7 +3,7 @@
     <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
     <swiper
       :slides-per-view="1"
-      :space-between="155"
+      :space-between="135"
       :breakpoints="{
         480: { slidesPerView: 1 },
         640: { slidesPerView: 2 },
@@ -12,17 +12,21 @@
       navigation
       loop
     >
-      <swiper-slide v-for="(item, index) in slides" :key="index">
-        <div class="relative rounded-3xl shadow-lg overflow-hidden">
+      <swiper-slide
+        class="rounded-3xl"
+        v-for="(item, index) in slides"
+        :key="index"
+      >
+        <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
           <img
             src="../assets/img/slider3.png"
             alt="Design"
-            class="w-full h-[395px] object-cover"
+            class="w-full h-[395px] object-cover rounded-3xl"
           />
-        </div>
-        <div id="glass">
-          <p class="text-sm uppercase text-[#F1EDBA]">Graphic Design</p>
-          <h3 class="text-lg font-semibold">{{ item.title }}</h3>
+          <div id="glass">
+            <p class="text-sm uppercase text-[#F1EDBA]">Graphic Design</p>
+            <h3 class="text-lg font-semibold">{{ item.title }}</h3>
+          </div>
         </div>
       </swiper-slide>
     </swiper>
