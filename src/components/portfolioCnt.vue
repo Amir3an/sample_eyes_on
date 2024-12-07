@@ -7,7 +7,7 @@
       :breakpoints="{
         480: { slidesPerView: 1 },
         640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3, spaceBetween: 50 },
+        1024: { slidesPerView: 3 },
       }"
       navigation
       loop
@@ -90,13 +90,11 @@ export default {
   position: absolute;
   padding: 2rem;
   bottom: 0.7rem;
-  right: -0.5%;
+  right: -5%;
   width: 110%;
   height: 126px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(5, 57, 48, 0.14);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(48px);
 }
 </style>
