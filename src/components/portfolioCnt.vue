@@ -13,7 +13,7 @@
       loop
     >
       <swiper-slide v-for="(item, index) in slides" :key="index">
-        <div class="rounded-3xl shadow-lg overflow-hidden">
+        <div class="relative rounded-3xl shadow-lg overflow-hidden">
           <img
             src="../assets/img/slider3.png"
             alt="Design"
@@ -23,8 +23,8 @@
             <p class="text-sm uppercase text-gray-400">Graphic Design</p>
             <h3 class="text-lg font-semibold">{{ item.title }}</h3>
           </div> -->
+          <p id="glass"></p>
         </div>
-        <p id="glass"></p>
       </swiper-slide>
     </swiper>
 
@@ -89,6 +89,7 @@ export default {
 
 #blur {
   position: absolute;
+  bottom: 3rem;
   width: 385px;
   height: 126px;
   background: rgba(255, 255, 255, 0.2);
@@ -96,5 +97,6 @@ export default {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 999;
 }
 </style>
