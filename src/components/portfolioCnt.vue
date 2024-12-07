@@ -24,7 +24,7 @@
             class="w-full h-[395px] object-cover rounded-3xl"
           />
           <div id="glass">
-            <p class="text-sm uppercase text-[#F1EDBA]">Graphic Design</p>
+            <p class="text-[1rem] text-[#F1EDBA]">Graphic Design</p>
             <h3 class="text-lg font-semibold">{{ item.title }}</h3>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default {
 
 #glass {
   position: absolute;
-  padding: 2rem;
+  padding-inline: 2rem;
   bottom: 0.7rem;
   right: -5%;
   width: 110%;
