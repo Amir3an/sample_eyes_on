@@ -87,7 +87,7 @@ export default {
   justify-content: center;
 }
 
-#blur {
+#glass {
   position: absolute;
   bottom: 3rem;
   width: 385px;
@@ -97,6 +97,5 @@ export default {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 999;
 }
 </style>
