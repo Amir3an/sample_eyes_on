@@ -24,6 +24,7 @@
             <h3 class="text-lg font-semibold">{{ item.title }}</h3>
           </div> -->
         </div>
+        <p id="glass"></p>
       </swiper-slide>
     </swiper>
 
@@ -84,5 +85,16 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#blur {
+  position: absolute;
+  width: 385px;
+  height: 126px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 </style>
