@@ -12,7 +12,6 @@
       </div>
     </div>
     <swiper
-      :modules="[Navigation]"
       :slides-per-view="1"
       :space-between="135"
       :breakpoints="{
