@@ -54,10 +54,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // Static imports for images
-import slide1 from "@/assets/img/slide1.png";
-import slide2 from "@/assets/img/slider2.png";
-import slide3 from "@/assets/img/slider3.png";
-import slide4 from "@/assets/img/slider4.png";
+import slide1 from "../assets/img/slide1.png";
+import slide2 from "../assets/img/slider2.png";
+import slide3 from "../assets/img/slider3.png";
+import slide4 from "../assets/img/slider4.png";
 
 export default {
   components: {
