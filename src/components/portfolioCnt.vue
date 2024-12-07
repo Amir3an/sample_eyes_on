@@ -93,7 +93,6 @@ export default {
 #glass {
   position: absolute;
   padding-inline: 2rem;
-  background-image: url("");
   bottom: 0.7rem;
   right: -5%;
   width: 110%;
