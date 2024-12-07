@@ -24,8 +24,8 @@
             class="w-full h-[395px] object-cover rounded-3xl"
           />
           <div id="glass">
-            <p class="text-[1rem] text-[#F1EDBA]">Graphic Design</p>
-            <h3 class="text-lg font-semibold">{{ item.title }}</h3>
+            <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
+            <h6 class="text-xl font-semibold">{{ item.title }}</h6>
           </div>
         </div>
       </swiper-slide>
