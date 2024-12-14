@@ -1,6 +1,6 @@
 <template>
   <footer class="absolute w-full h-[233px] bg-[rgba(255, 255, 255, 1)]">
-    <EyesOn />
+    <EyesOn class="w-[10.75rem] h-[7.8rem]" />
   </footer>
 </template>
 
