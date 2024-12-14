@@ -8,6 +8,8 @@ export default {};
 
 <style scpeed>
 footer {
+  position: fixed;
+  bottom: 0;
   background: rgba(112, 249, 224, 0.08);
   backdrop-filter: blur(20.9px);
 }
