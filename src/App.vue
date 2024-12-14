@@ -104,7 +104,6 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
 }
 </style>
