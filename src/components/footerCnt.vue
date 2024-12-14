@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full"></div>
+  <footer class="w-full h-[233px] bg-[rgba(255, 255, 255, 1)]"></footer>
 </template>
 
 <script>
