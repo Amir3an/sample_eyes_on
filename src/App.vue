@@ -102,4 +102,9 @@ body {
 #contactUs {
   position: relative;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
 </style>
