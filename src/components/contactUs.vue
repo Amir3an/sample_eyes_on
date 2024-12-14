@@ -61,16 +61,20 @@
     </form>
   </div>
   <div
-    class="absolute top-0 left-[60%] w-[115px] h-[1080px] blur-[12px] rotate-[45deg] opacity-50 bg-[radial-gradient(circle,_rgba(30,120,101,0.2)_0%,_rgba(83,162,255,0)_80%)] shadow-2xl animate-fade-in"
+    id="vector"
+    class="absolute top-0 left-[60%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
-    class="absolute top-0 left-[72%] w-[200px] h-[1080px] blur-[12px] rotate-[45deg] opacity-50 bg-[radial-gradient(circle,_rgba(30,120,101,0.3)_0%,_rgba(83,162,255,0)_90%)] shadow-2xl animate-fade-in delay-100"
+    id="vector-2"
+    class="absolute top-0 left-[72%] w-[198px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
-    class="absolute top-0 left-[80%] w-[115px] h-[1080px] blur-[12px] rotate-[45deg] opacity-50 bg-[radial-gradient(circle,_rgba(30,120,101,0.2)_0%,_rgba(83,162,255,0)_70%)] shadow-2xl animate-fade-in delay-200"
+    id="vector"
+    class="absolute top-0 left-[80%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
-    class="absolute top-0 left-[93%] w-[110px] h-[1080px] blur-[12px] rotate-[45deg] opacity-50 bg-[radial-gradient(circle,_rgba(30,120,101,0.3)_0%,_rgba(83,162,255,0)_80%)] shadow-2xl animate-fade-in delay-300"
+    id="vector-3"
+    class="absolute top-0 left-[93%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
 </template>
 
