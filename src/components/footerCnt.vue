@@ -4,6 +4,9 @@
   ></footer>
 </template>
 
+<script>
+</script>
+
 <style scpeed>
 footer {
   backdrop-filter: blur(20.9px);
