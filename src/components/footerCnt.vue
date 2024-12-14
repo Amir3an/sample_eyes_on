@@ -6,6 +6,12 @@
 
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
+
+export default {
+  components: {
+    EyesOn,
+  },
+};
 </script>
 
 <style scpeed>
