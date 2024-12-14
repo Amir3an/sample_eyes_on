@@ -9,7 +9,6 @@ export default {};
 <style scpeed>
 footer {
   background: rgba(112, 249, 224, 0.08);
-  backdrop-filter: blur(21px);
-  margin-bottom: -3rem;
+  backdrop-filter: blur(20.9px);
 }
 </style>
