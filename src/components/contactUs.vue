@@ -60,18 +60,27 @@
       </button>
     </form>
   </div>
-  <div
-    class="absolute top-0 left-[60%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
-  ></div>
-  <div
-    class="absolute top-0 left-[72%] w-[198px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
-  ></div>
-  <div
-    class="absolute top-0 left-[80%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
-  ></div>
-  <div
-    class="absolute top-0 left-[93%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
-  ></div>
+  <div class="relative w-full h-screen overflow-hidden bg-black">
+    <!-- Vector 1 -->
+    <div
+      class="absolute top-0 left-[58%] w-[120px] h-[1080px] rotate-[45deg] opacity-[0.3] blur-[16px] bg-gradient-to-br from-[rgba(30,120,101,0.5)] via-transparent to-[rgba(83,162,255,0)] shadow-[0_0_40px_rgba(30,120,101,0.2)] animate-slow-move"
+    ></div>
+
+    <!-- Vector 2 -->
+    <div
+      class="absolute top-0 left-[72%] w-[180px] h-[1080px] rotate-[45deg] opacity-[0.4] blur-[16px] bg-gradient-to-br from-[rgba(83,162,255,0.5)] via-transparent to-[rgba(30,120,101,0)] shadow-[0_0_50px_rgba(83,162,255,0.3)] animate-slow-move delay-100"
+    ></div>
+
+    <!-- Vector 3 -->
+    <div
+      class="absolute top-0 left-[80%] w-[120px] h-[1080px] rotate-[45deg] opacity-[0.25] blur-[18px] bg-gradient-to-br from-[rgba(30,120,101,0.4)] via-transparent to-[rgba(83,162,255,0)] shadow-[0_0_60px_rgba(30,120,101,0.2)] animate-slow-move delay-200"
+    ></div>
+
+    <!-- Vector 4 -->
+    <div
+      class="absolute top-0 left-[93%] w-[110px] h-[1080px] rotate-[45deg] opacity-[0.35] blur-[18px] bg-gradient-to-br from-[rgba(83,162,255,0.5)] via-transparent to-[rgba(30,120,101,0)] shadow-[0_0_70px_rgba(83,162,255,0.3)] animate-slow-move delay-300"
+    ></div>
+  </div>
 </template>
 
 <script>
@@ -85,6 +94,28 @@ export default {
 </script>
 
 <style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes slow-move {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(45deg);
+    }
+    100% {
+      transform: translateY(0) rotate(45deg);
+    }
+  }
+
+  .animate-slow-move {
+    animation: slow-move 6s ease-in-out infinite;
+  }
+}
+
 h2 {
   font-family: Bangla-Sangam-MN;
 }
@@ -95,39 +126,5 @@ div {
 
 input {
   color: #ffffff;
-}
-
-#vector {
-  background: linear-gradient(
-    35deg,
-    rgba(30, 120, 101, 0.212) 0%,
-    rgba(83, 162, 255, 0) 100%
-  );
-  opacity: 0.5;
-}
-#vector-2 {
-  background: linear-gradient(
-    35deg,
-    rgba(30, 120, 101, 0.212) 0%,
-    rgba(83, 162, 255, 0) 100%
-  );
-  opacity: 0.5;
-}
-#vector-3 {
-  background: linear-gradient(
-    35deg,
-    rgba(30, 120, 101, 0.212) 0%,
-    rgba(83, 162, 255, 0) 100%
-  );
-  opacity: 0.5;
-}
-
-#vector-4 {
-  background: linear-gradient(
-    35deg,
-    rgba(30, 120, 101, 0.212) 0%,
-    rgba(83, 162, 255, 0) 100%
-  );
-  opacity: 0.5;
 }
 </style>
