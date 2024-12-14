@@ -127,4 +127,38 @@ div {
 input {
   color: #ffffff;
 }
+
+#vector {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  opacity: 0.5;
+}
+#vector-2 {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  opacity: 0.5;
+}
+#vector-3 {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  opacity: 0.5;
+}
+
+#vector-4 {
+  background: linear-gradient(
+    35deg,
+    rgba(30, 120, 101, 0.212) 0%,
+    rgba(83, 162, 255, 0) 100%
+  );
+  opacity: 0.5;
+}
 </style>
