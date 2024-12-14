@@ -94,28 +94,6 @@ export default {
 </script>
 
 <style scoped>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-  @keyframes slow-move {
-    0% {
-      transform: translateY(0) rotate(45deg);
-    }
-    50% {
-      transform: translateY(-10px) rotate(45deg);
-    }
-    100% {
-      transform: translateY(0) rotate(45deg);
-    }
-  }
-
-  .animate-slow-move {
-    animation: slow-move 6s ease-in-out infinite;
-  }
-}
-
 h2 {
   font-family: Bangla-Sangam-MN;
 }
