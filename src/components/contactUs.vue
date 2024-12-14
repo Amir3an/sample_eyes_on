@@ -62,19 +62,19 @@
   </div>
   <div
     id="vector"
-    class="absolute top-0 left-[50%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[60%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-[45deg ]"
   ></div>
   <div
     id="vector-2"
-    class="absolute top-0 left-[62%] w-[198px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[72%] w-[198px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
     id="vector"
-    class="absolute top-0 left-[70%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[80%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
   <div
     id="vector-3"
-    class="absolute top-0 left-[83%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[93%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-45"
   ></div>
 </template>
 
