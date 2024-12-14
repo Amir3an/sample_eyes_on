@@ -105,5 +105,6 @@ body {
 
 footer {
   position: relative;
+  margin-top: 14.4375rem;
 }
 </style>
