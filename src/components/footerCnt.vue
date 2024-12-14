@@ -1,12 +1,16 @@
 <template>
   <footer class="absolute w-full h-[233px] bg-[rgba(255, 255, 255, 1)]">
-    <div class="w-[80%]">
-      <EyesOn class="w-[10.75rem] h-[7.8rem]" />
-      <h2 class="text-xl">Exelence In Every Detail</h2>
-      <p>
-        Detailed information about our motion graphics and animation services,
-        including examples and benefits.
-      </p>
+    <div class="flex w-[80%]">
+      <div class="w-[60%] flex justify-between items-center">
+        <EyesOn class="w-[10.75rem] h-[7.8rem]" />
+        <article>
+          <h2 class="text-xl">Exelence In Every Detail</h2>
+          <p>
+            Detailed information about our motion graphics and animation
+            services, including examples and benefits.
+          </p>
+        </article>
+      </div>
     </div>
   </footer>
 </template>
