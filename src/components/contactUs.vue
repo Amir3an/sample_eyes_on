@@ -61,20 +61,16 @@
     </form>
   </div>
   <div
-    id="vector"
-    class="absolute top-0 left-[60%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[60%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
   ></div>
   <div
-    id="vector-2"
-    class="absolute top-0 left-[72%] w-[198px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[72%] w-[198px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
   ></div>
   <div
-    id="vector"
-    class="absolute top-0 left-[80%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[80%] w-[114.76px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
   ></div>
   <div
-    id="vector-3"
-    class="absolute top-0 left-[93%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[93%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-[45deg] opacity-50 bg-gradient-to-br from-[rgba(30,120,101,0.212)] to-[rgba(83,162,255,0)]"
   ></div>
 </template>
 
