@@ -1,7 +1,5 @@
 <template>
-
-
-
+  <div class="w-[80%] m-auto"></div>
 </template>
 
 <script>
