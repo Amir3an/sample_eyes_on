@@ -1,10 +1,11 @@
 <template>
-  <footer
-    class="absolute w-full h-[233px] bg-[rgba(255, 255, 255, 1)]"
-  ></footer>
+  <footer class="absolute w-full h-[233px] bg-[rgba(255, 255, 255, 1)]">
+    <EyesOn />
+  </footer>
 </template>
 
 <script>
+import EyesOn from "../assets/svg-icon/EyesOn.vue";
 </script>
 
 <style scpeed>
