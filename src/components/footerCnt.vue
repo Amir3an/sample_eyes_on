@@ -9,6 +9,6 @@
 <style scpeed>
 footer {
   backdrop-filter: blur(20.9px);
-  background: rgba(112, 249, 224, 0.08);
+  background: rgb(0, 249, 203);
 }
 </style>
