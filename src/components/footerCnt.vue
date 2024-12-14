@@ -11,6 +11,15 @@
           </p>
         </article>
       </div>
+
+      <div>
+        <h3>Links</h3>
+        <div class="flex gap-8">
+          <button><span>Home page</span></button>
+          <button><span>Services</span></button>
+          <button><span>Portfolio</span></button>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
