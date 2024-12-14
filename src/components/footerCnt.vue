@@ -1,7 +1,7 @@
 <template>
   <footer class="absolute w-full h-[233px]">
     <div class="flex w-[80%] h-full m-auto justify-between">
-      <div class="w-[60%] flex justify-between items-center">
+      <div class="flex justify-between items-center">
         <EyesOn class="w-[10.75rem] h-[7.8rem]" />
         <article>
           <h2 class="text-3xl">Exelence In Every Detail</h2>
