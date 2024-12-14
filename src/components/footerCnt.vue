@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[80%] m-auto"></div>
+  <div class="w-full"></div>
 </template>
 
 <script>
