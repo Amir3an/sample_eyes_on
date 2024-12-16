@@ -12,7 +12,7 @@
         </article>
       </div>
 
-      <div class="flex flex-col gap-8">
+      <div class="flex ml-[5rem] flex-col gap-8">
         <h3 class="text-xl">Links</h3>
         <div class="flex gap-8">
           <button>
