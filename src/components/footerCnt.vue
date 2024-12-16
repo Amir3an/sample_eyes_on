@@ -22,7 +22,7 @@
           <button><span class="text-base">Portfolio</span></button>
         </div>
 
-        <div class="flex gap-8">
+        <div class="flex gap-12">
           <telegramIcon />
           <instagramIcon />
           <linkdenIcon />
@@ -43,6 +43,7 @@ export default {
     EyesOn,
     telegramIcon,
     instagramIcon,
+    linkdenIcon,
   },
 };
 </script>
