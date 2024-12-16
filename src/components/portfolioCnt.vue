@@ -25,20 +25,48 @@
         nextEl: '.swiper-button-next',
       }"
     >
-      <swiper-slide
-        class="rounded-3xl"
-        v-for="(item, index) in slides"
-        :key="index"
-      >
+      <swiper-slide class="rounded-3xl">
         <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
           <img
-            src="../assets/img/slide1.png"
+            src="../assets/img/swiper3.jfif"
             alt="Design"
             class="w-full h-[395px] object-cover rounded-3xl"
           />
           <div id="glass">
             <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
-            <h6 class="text-xl mt-2 font-bold">{{ item.title }}</h6>
+            <h6 class="text-xl mt-2 font-bold">
+              A brand 3d Design Characteristic for growth
+            </h6>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="rounded-3xl">
+        <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
+          <img
+            src="../assets/img/swiper2.jfif"
+            alt="Design"
+            class="w-full h-[395px] object-cover rounded-3xl"
+          />
+          <div id="glass">
+            <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
+            <h6 class="text-xl mt-2 font-bold">
+              A brand 3d Design Characteristic for growth
+            </h6>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="rounded-3xl">
+        <div class="relative rounded-3xl shadow-lg overflow-visible mx-5">
+          <img
+            src="../assets/img/swiper1.jfif"
+            alt="Design"
+            class="w-full h-[395px] object-cover rounded-3xl"
+          />
+          <div id="glass">
+            <p class="text-lg font-normal text-[#F1EDBA]">Graphic Design</p>
+            <h6 class="text-xl mt-2 font-bold">
+              A brand 3d Design Characteristic for growth
+            </h6>
           </div>
         </div>
       </swiper-slide>
@@ -55,24 +83,7 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  data() {
-    return {
-      slides: [
-        {
-          title: "A brand 3d Design Characteristic for growth",
-        },
-        {
-          title: "A brand 3d Design Characteristic for growth",
-        },
-        {
-          title: "A brand 3d Design Characteristic for growth",
-        },
-        {
-          title: "A brand 3d Design Characteristic for growth",
-        },
-      ],
-    };
-  },
+  data() {},
 };
 </script>
 
