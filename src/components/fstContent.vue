@@ -58,6 +58,36 @@ export default {
 </script>
 
 <style scoped>
+div {
+  font-family: BarlowRegula;
+  color: white;
+}
+
+button {
+  border: 1px solid #f1edba;
+}
+
+#blur {
+  backdrop-filter: blur(21px);
+}
+
+#img {
+  background: url("../assets/img/eyseOn1.png");
+}
+
+#blur-2 {
+  position: absolute;
+  top: -6rem;
+  left: -17rem;
+  width: 430px;
+  height: 200.16px;
+  background-color: #71c3d04d;
+  transform: rotate(-130.91deg);
+  filter: blur(113px);
+  border-radius: 25rem; /* گرد کردن گوشه‌ها */
+  z-index: -9;
+}
+
 .services-container {
   height: 100vh;
   display: flex;
@@ -85,22 +115,5 @@ export default {
 .service-card.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-div {
-  font-family: BarlowRegula;
-  color: white;
-}
-
-button {
-  border: 1px solid #f1edba;
-}
-
-#blur {
-  backdrop-filter: blur(21px);
-}
-
-#img {
-  background: url("../assets/img/eyseOn1.png");
 }
 </style>
