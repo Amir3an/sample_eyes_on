@@ -6,13 +6,13 @@
         <article class="ml-4">
           <h2 class="text-3xl">Exelence In Every Detail</h2>
           <p>
-            Detailed information about our motion graphics and animation
+            Detailed information about our motion graphics and animation<br />
             services, including examples and benefits.
           </p>
         </article>
       </div>
 
-      <div class="flex ml-[5rem] flex-col gap-8">
+      <div class="fle x ml-[5rem] flex-col gap-8">
         <h3 class="text-xl">Links</h3>
         <div class="flex gap-8">
           <button>
