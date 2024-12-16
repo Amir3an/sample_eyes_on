@@ -3,7 +3,7 @@
     <div class="flex w-[80%] h-full m-auto items-center">
       <div class="flex justify-between items-center">
         <EyesOn class="w-[10.75rem] h-[7.8rem]" />
-        <article class="ml-4">
+        <article class="ml-16">
           <h2 class="text-3xl">Exelence In Every Detail</h2>
           <p>
             Detailed information about our motion graphics and animation<br />
@@ -12,7 +12,7 @@
         </article>
       </div>
 
-      <div class="fle x ml-[5rem] flex-col gap-8">
+      <div class="flex flex-col gap-8 ml-40">
         <h3 class="text-xl">Links</h3>
         <div class="flex gap-8">
           <button>
