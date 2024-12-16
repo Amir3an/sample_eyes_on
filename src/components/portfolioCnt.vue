@@ -1,10 +1,8 @@
 <template>
   <div class="w-[80%] m-auto relative portfolio-slider text-white p-8">
-    <div class="w-full">
+    <div class="flex justify-between w-full">
       <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
-      <div
-        class="swiper-navigation absolute top-1/2 left-0 right-0 flex justify-between"
-      >
+      <div class="swiper-navigation flex">
         <button class="swiper-button-prev">
           <i class="fas fa-arrow-left"></i>
         </button>
@@ -21,7 +19,6 @@
         640: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
       }"
-      loop
       :navigation="{
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next',
@@ -121,12 +118,13 @@ export default {
 <style scoped>
 .swiper-button-prev,
 .swiper-button-next {
+  display: flex;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 44, 63, 1);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: flex;
+  border: 0.79px solid rgba(241, 237, 186, 1);
   align-items: center;
   justify-content: center;
   z-index: 10;
