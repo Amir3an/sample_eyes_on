@@ -1,7 +1,7 @@
 <template>
   <div class="w-[80%] m-auto">
     <h2 class="text-[56px] font-bold leading-tight w-[100%]">Contact us</h2>
-    <div id="blur-2"></div>
+    <div id="blur"></div>
     <form class="w-[816px] p-8 mt-[5%] h-auto rounded-3xl bg-[#70F9E014]">
       <div class="flex items-center justify-between">
         <div class="w-[48%] flex flex-col">
@@ -134,5 +134,18 @@ input {
     rgba(83, 162, 255, 0) 100%
   );
   opacity: 0.5;
+}
+
+#blur {
+  position: absolute;
+  top: -6rem;
+  left: -17rem;
+  width: 430px;
+  height: 200.16px;
+  background-color: #71c3d04d;
+  transform: rotate(-130.91deg);
+  filter: blur(113px);
+  border-radius: 25rem; /* گرد کردن گوشه‌ها */
+  z-index: -9;
 }
 </style>
