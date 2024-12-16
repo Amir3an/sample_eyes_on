@@ -22,9 +22,11 @@
           <button><span class="text-base">Portfolio</span></button>
         </div>
 
-        <div>
+        <div class="flex gap-8">
           <telegramIcon />
-        </div>  
+          <instagramIcon />
+          <linkdenIcon />
+        </div>
       </div>
     </div>
   </footer>
@@ -33,11 +35,14 @@
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
 import telegramIcon from "../assets/svg-icon/footer/telegram-icon.vue";
+import instagramIcon from "../assets/svg-icon/footer/instagram-icon.vue";
+import linkdenIcon from "../assets/svg-icon/footer/linkden-icon.vue";
 
 export default {
   components: {
     EyesOn,
     telegramIcon,
+    instagramIcon,
   },
 };
 </script>
