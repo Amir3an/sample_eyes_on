@@ -34,10 +34,15 @@
       </div>
       <div class="flex mt-[5%] items-center justify-between">
         <div class="w-[48%] flex flex-col">
-          <label for="phonenumber" class="text-xl">Phone Number</label>
+          <label
+            for="phonenumber"
+            class="text-xl"
+            >Phone Number</label
+          >
           <input
             id="phonenumber"
             class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
+            placeholder="+98   919*******"
             type="text"
           />
         </div>
@@ -51,7 +56,7 @@
         </div>
       </div>
       <button
-        class="flex items-center pt-1 justify-evenly w-[183px] mt-5 h-14 border border-[#F1EDBA] text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
+        class="flex items-center pt-1 justify-evenly w-[183px] ml-auto mt-5 h-14 border border-[#F1EDBA] text-[#F1EDBA] text-xl bg-[#002C3F] rounded-[32px]"
       >
         Send Form
         <span
@@ -138,13 +143,11 @@ input {
 
 #blur {
   position: absolute;
-  top: -6rem;
-  left: -17rem;
-  width: 430px;
-  height: 200.16px;
+  left: -200px;
+  width: 556px;
+  height: 60%;
   background-color: #71c3d04d;
-  transform: rotate(-130.91deg);
-  filter: blur(113px);
+  filter: blur(226px);
   border-radius: 25rem; /* گرد کردن گوشه‌ها */
   z-index: -9;
 }
