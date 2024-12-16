@@ -13,12 +13,18 @@
       </div>
 
       <div>
-        <h3>Links</h3>
+        <h3 class="text-xl">Links</h3>
         <div class="flex gap-8">
-          <button><span>Home page</span></button>
-          <button><span>Services</span></button>
-          <button><span>Portfolio</span></button>
+          <button>
+            <span class="text-base">Home page</span>
+          </button>
+          <button><span class="text-base">Services</span></button>
+          <button><span class="text-base">Portfolio</span></button>
         </div>
+
+        <div>
+          <telegramIcon />
+        </div>  
       </div>
     </div>
   </footer>
@@ -26,10 +32,12 @@
 
 <script>
 import EyesOn from "../assets/svg-icon/EyesOn.vue";
+import telegramIcon from "../assets/svg-icon/footer/telegram-icon.vue";
 
 export default {
   components: {
     EyesOn,
+    telegramIcon,
   },
 };
 </script>
