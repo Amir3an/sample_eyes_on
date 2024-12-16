@@ -1,6 +1,6 @@
 <template>
   <footer class="absolute w-full h-[233px]">
-    <div class="flex w-[80%] h-full m-auto justify-between">
+    <div class="flex w-[80%] h-full m-auto items-center">
       <div class="flex justify-between items-center">
         <EyesOn class="w-[10.75rem] h-[7.8rem]" />
         <article class="ml-4">
@@ -12,7 +12,7 @@
         </article>
       </div>
 
-      <div>
+      <div class="flex flex-col gap-8">
         <h3 class="text-xl">Links</h3>
         <div class="flex gap-8">
           <button>
@@ -21,7 +21,6 @@
           <button><span class="text-base">Services</span></button>
           <button><span class="text-base">Portfolio</span></button>
         </div>
-
         <div class="flex gap-12">
           <telegramIcon />
           <instagramIcon />
