@@ -34,11 +34,7 @@
       </div>
       <div class="flex mt-[5%] items-center justify-between">
         <div class="w-[48%] flex flex-col">
-          <label
-            for="phonenumber"
-            class="text-xl"
-            >Phone Number</label
-          >
+          <label for="phonenumber" class="text-xl">Phone Number</label>
           <input
             id="phonenumber"
             class="bg-[#99DDE52E] text-xl p-[18px] h-12 rounded-lg mt-3 outline-none"
@@ -80,8 +76,13 @@
   ></div>
   <div
     id="vector-3"
-    class="absolute top-0 left-[93%] w-[110.13px] h-[1079.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[86 %] w-[85.13px] h-[1255.27px] blur-[12px] rotate-45"
   ></div>
+  <div
+    id="vector-3"
+    class="absolute top-0 left-[93%] w-[85.13px] h-[1255.27px] blur-[12px] rotate-45"
+  ></div>
+  <div id="blur-2"></div>
 </template>
 
 <script>
@@ -146,6 +147,17 @@ input {
   left: -200px;
   width: 556px;
   height: 60%;
+  background-color: #71c3d04d;
+  filter: blur(226px);
+  border-radius: 25rem; /* گرد کردن گوشه‌ها */
+  z-index: -9;
+}
+
+#blur-2 {
+  position: absolute;
+  right: -200px;
+  width: 556px;
+  height: 486px;
   background-color: #71c3d04d;
   filter: blur(226px);
   border-radius: 25rem; /* گرد کردن گوشه‌ها */
