@@ -2,7 +2,7 @@
   <div class="w-[80%] m-auto relative portfolio-slider text-white p-8">
     <div class="w-full">
       <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
-      <div class="swiper-navigation">
+      <div class="swiper-navigation absolute top-1/2 left-0 right-0 flex justify-between">
         <button class="swiper-button-prev">
           <i class="fas fa-arrow-left"></i>
         </button>
@@ -98,6 +98,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  font-size: 18px;
 }
 
 #glass {
