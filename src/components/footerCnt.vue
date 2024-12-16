@@ -3,7 +3,7 @@
     <div class="flex w-[80%] h-full m-auto justify-between">
       <div class="flex justify-between items-center">
         <EyesOn class="w-[10.75rem] h-[7.8rem]" />
-        <article>
+        <article class="ml-4">
           <h2 class="text-3xl">Exelence In Every Detail</h2>
           <p>
             Detailed information about our motion graphics and animation
