@@ -64,19 +64,19 @@
   </div>
   <div
     id="vector"
-    class="absolute top-0 left-[60%] w-[114.76px] h-[1239.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[65%] w-[114.76px] h-[1239.27px] blur-[35px] rotate-45"
   ></div>
   <div
     id="vector-2"
-    class="absolute top-0 left-[72%] w-[198px] h-[1179.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[72%] w-[198px] h-[1279.27px] blur-[12px] rotate-45"
   ></div>
   <div
     id="vector"
-    class="absolute top-0 left-[80%] w-[114.76px] h-[1179.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[80%] w-[114.76px] h-[1279.27px] blur-[12px] rotate-45"
   ></div>
   <div
     id="vector-3"
-    class="absolute top-0 left-[86%] w-[85.13px] h-[1255.27px] blur-[12px] rotate-45"
+    class="absolute top-0 left-[88%] w-[85.13px] h-[1255.27px] blur-[12px] rotate-45"
   ></div>
   <div
     id="vector-3"
