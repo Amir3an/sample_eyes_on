@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-[80%] m-auto relative gap-10 items-start">
+  <div class="flex justify-between w-[80%] m-auto relative items-start">
     <!-- بخش ثابت (سرویس‌ها) -->
     <div class="relative flex flex-col section-fixed w-[40%]">
       <div id="blur-2"></div>
@@ -25,10 +25,7 @@
     </div>
 
     <!-- کارت‌ها -->
-    <div
-      class="flex flex-col gap-8 cards-container w-[60%]"
-      ref="cardsContainer"
-    >
+    <div class="flex flex-col gap-8 cards-container" ref="cardsContainer">
       <div
         v-for="(card, index) in cards"
         :key="index"
@@ -88,8 +85,8 @@ export default {
     initScrollCards() {
       const cards = this.cards.map((_, index) => this.$refs[`card-${index}`]);
 
-      // انیمیشن ظاهر شدن کارت‌ها
       cards.forEach((card, index) => {
+        // تنظیم انیمیشن ظاهر شدن و محو شدن
         gsap.fromTo(
           card,
           { opacity: 0, y: 50 }, // حالت اولیه
@@ -97,12 +94,13 @@ export default {
             opacity: 1,
             y: 0,
             duration: 0.8,
-            delay: index * 0.2, // تأخیر بین کارت‌ها
             ease: "power2.out",
             scrollTrigger: {
               trigger: card,
               start: "top 75%", // شروع انیمیشن وقتی کارت به 75% صفحه رسید
-              toggleActions: "play none none none", // کنترل حالت انیمیشن
+              end: "top 25%", // پایان انیمیشن وقتی کارت به 25% صفحه رسید
+              toggleActions: "play reverse play reverse", // فعال شدن در هر دو جهت
+              markers: false, // برای نمایش نقطه‌ها (برای تست فعال کنید)
             },
           }
         );
