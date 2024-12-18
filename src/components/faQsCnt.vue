@@ -134,7 +134,7 @@ article {
 
 #blur-2 {
   position: absolute;
-  top: -3.5rem;
+  top: -0.5rem;
   left: 0;
   width: 319.44px;
   height: 330.68px;
@@ -148,13 +148,13 @@ article {
 
 #blur-3 {
   position: absolute;
-  top: 6.5rem;
+  top: 30%;
   left: -1rem;
   width: 319.44px;
   height: 330.68px;
   background-color: #71c3d033;
   transform: rotate(-55deg);
-  filter: blur(150px); /* میزان تاری */
+  filter: blur(185px); /* میزان تاری */
   border-radius: 100%; /* گرد کردن گوشه‌ها */
   padding: 16px;
   z-index: -9;
