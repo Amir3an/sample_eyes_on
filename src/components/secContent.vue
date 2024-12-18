@@ -111,13 +111,16 @@ export default {
   methods: {
     handleMouseMove(event) {
       const circle = this.$refs.blurCircle;
-      const xPos = event.clientX; // موقعیت X موس
-      const yPos = event.clientY; // موقعیت Y موس
+
+      // محاسبه موقعیت موس نسبت به صفحه
+      const container = event.currentTarget.getBoundingClientRect();
+      const xPos = event.clientX - container.left; // موقعیت X نسبت به container
+      const yPos = event.clientY - container.top; // موقعیت Y نسبت به container
 
       // به‌روزرسانی موقعیت دایره بلور
       gsap.to(circle, {
-        x: xPos, // موقعیت دقیق موس
-        y: yPos, // موقعیت دقیق موس
+        x: xPos - circle.offsetWidth / 2,
+        y: yPos - circle.offsetHeight / 2,
         opacity: 1,
         duration: 0.1,
         ease: "power3.out",
