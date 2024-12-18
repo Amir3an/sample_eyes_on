@@ -127,11 +127,14 @@ button {
 }
 
 .section-fixed {
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .cards-container {
+  width: max-content;
+  height: 95vh; /* قفل کردن کل بخش کارت‌ها */
   display: flex;
   flex-direction: column;
   justify-content: center;
