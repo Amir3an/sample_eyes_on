@@ -105,19 +105,43 @@ export default {
       // انیمیشن دوتایی
       cardGroups.forEach((group, index) => {
         gsap.fromTo(
-          group,
-          { opacity: 0, y: 50 }, // حالت اولیه
+          group[0],
+          { opacity: 0, y: 50 }, // حالت اولیه کارت اول
           {
             opacity: 1,
             y: 0,
             duration: 0.5,
-            stagger: 0.2, // تاخیر بین کارت‌های هر گروه
             scrollTrigger: {
               trigger: group[0], // اولین کارت گروه به عنوان تریگر
               start: "top 75%", // شروع انیمیشن
               end: "top 25%", // پایان انیمیشن
               toggleActions: "play reverse play reverse",
-              markers: false, // برای نمایش نقطه‌ها (برای تست فعال کنید)
+              markers: false,
+            },
+            onComplete: () => {
+              // پس از کامل شدن انیمیشن، کارت بعدی نمایش داده می‌شود
+              gsap.to(group[1], {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+              });
+            },
+          }
+        );
+
+        gsap.fromTo(
+          group[1],
+          { opacity: 0, y: 50 }, // حالت اولیه کارت دوم
+          {
+            opacity: 0,
+            y: 50,
+            duration: 0.5,
+            scrollTrigger: {
+              trigger: group[1], // دومین کارت گروه به عنوان تریگر
+              start: "top 75%",
+              end: "top 25%",
+              toggleActions: "play reverse play reverse",
+              markers: false,
             },
           }
         );
@@ -129,7 +153,7 @@ export default {
         trigger: container,
         start: "top bottom",
         end: () => `+=${container.scrollHeight}`,
-        markers: false, // فقط برای تست
+        markers: false,
       });
     },
     resetGroup(group) {
@@ -159,7 +183,8 @@ button {
 }
 
 .card {
-  position: absolute; /* موقعیت کارت‌ها ثابت می‌شود */
+  position: relative; /* تغییر به relative برای جلوگیری از تداخل انیمیشن‌ها */
+  opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
