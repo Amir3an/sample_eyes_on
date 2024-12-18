@@ -23,7 +23,6 @@
         </button>
       </div>
     </div>
-
     <!-- کارت‌ها -->
     <div class="cards-container" ref="cardsContainer">
       <div
@@ -128,7 +127,6 @@ button {
 
 .cards-container {
   width: max-content;
-  height: 95vh; /* قفل کردن کل بخش کارت‌ها */
   display: flex;
   flex-direction: column;
   justify-content: center;
