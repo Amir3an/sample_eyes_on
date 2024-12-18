@@ -1,12 +1,13 @@
 <template>
-  <div class="w-[80%] flex justify-between m-auto">
-    <div class="relative flex flex-col">
+  <div class="w-[80%] m-auto relative">
+    <!-- بخش ثابت (بالا سمت چپ) -->
+    <div class="relative flex flex-col section-fixed">
       <div id="blur-2"></div>
       <EyseOnServices class="w-52 h-52 opacity-10" />
       <div class="flex flex-col gap-7 mt-[-1rem]">
         <h2 class="text-5xl font-bold mb-4">Services</h2>
         <p class="text-xl">
-          Detailed infortmation about our motion graphics and<br />
+          Detailed information about our motion graphics and<br />
           animation services, including examples and benefits.
         </p>
 
@@ -16,33 +17,26 @@
           View More
           <span
             class="w-8 h-8 content-center place-items-center border rounded-full border-[#F1EDBA]"
-            ><arrowRight
-          /></span>
+          >
+            <arrowRight />
+          </span>
         </button>
       </div>
     </div>
 
-    <div class="w-[594px] h-auto">
-      <div id="img" class="rounded-3xl">
+    <!-- کارت‌ها -->
+    <div class="cards-container" ref="cardsContainer">
+      <div
+        v-for="(card, index) in cards"
+        :key="index"
+        class="card"
+        :ref="`card-${index}`"
+      >
         <div
-          class="w-full relative h-[180px] px-10 py-8 rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px]"
+          class="w-[594px] h-auto px-10 py-8 rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px]"
         >
-          <h2 class="text-2xl font-bold">Motion Graphic</h2>
-          <p class="text-xl mt-4">
-            Detailed infortmation about our motion graphics and<br />
-            animation services, including examples and benefits.
-          </p>
-        </div>
-      </div>
-      <div id="img" class="rounded-3xl">
-        <div
-          class="w-full h-[180px] px-10 py-8 mt-5 rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px] brightness-75"
-        >
-          <h2 class="text-2xl font-bold">2D & 3D Animation</h2>
-          <p class="text-xl mt-4">
-            Detailed infortmation about our motion graphics and<br />
-            animation services, including examples and benefits.
-          </p>
+          <h2 class="text-2xl font-bold">{{ card.title }}</h2>
+          <p class="text-xl mt-4">{{ card.description }}</p>
         </div>
       </div>
     </div>
@@ -50,12 +44,72 @@
 </template>
 
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import EyseOnServices from "../assets/svg-icon/EyseOn-Services.vue";
 import arrowRight from "../assets/svg-icon/arrow-right.vue";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
   components: {
     arrowRight,
     EyseOnServices,
+  },
+  data() {
+    return {
+      cards: [
+        {
+          title: "Motion Graphic",
+          description: "Details about motion graphics services.",
+        },
+        {
+          title: "2D Animation",
+          description: "Information about 2D animation.",
+        },
+        {
+          title: "3D Animation",
+          description: "Explore 3D animation benefits.",
+        },
+        { title: "Custom Design", description: "Tailored design solutions." },
+      ],
+    };
+  },
+  mounted() {
+    this.initScrollCards();
+  },
+  methods: {
+    initScrollCards() {
+      const cardsContainer = this.$refs.cardsContainer;
+
+      // تنظیم انیمیشن برای کارت‌ها
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: cardsContainer,
+            start: "top top",
+            end: "+=300%", // افزایش مدت زمان برای ماندن در بخش
+            scrub: true, // حرکت انیمیشن با اسکرول
+            pin: true, // ثابت نگه‌داشتن بخش
+            anticipatePin: 1,
+          },
+        })
+        .to(".card", {
+          opacity: 0,
+          y: 50,
+          stagger: 1, // کارت‌ها یکی پس از دیگری نمایش داده شوند
+          duration: 1,
+          ease: "power2.out",
+        })
+        .to(".card", {
+          opacity: 1,
+          y: 0,
+          stagger: 1,
+          duration: 1,
+          ease: "power2.out",
+        });
+    },
   },
 };
 </script>
@@ -70,12 +124,23 @@ button {
   border: 1px solid #f1edba;
 }
 
-#blur {
-  backdrop-filter: blur(21px);
+.section-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-#img {
-  background: url("../assets/img/eyseOn1.png");
+.cards-container {
+  height: 100vh; /* قفل کردن کل بخش کارت‌ها */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  opacity: 0; /* شروع انیمیشن با حالت محو */
+  transition: opacity 0.3s ease-in-out;
 }
 
 #blur-2 {
@@ -87,7 +152,7 @@ button {
   background-color: #71c3d04d;
   transform: rotate(-130.91deg);
   filter: blur(113px);
-  border-radius: 25rem; /* گرد کردن گوشه‌ها */
+  border-radius: 25rem;
   z-index: -9;
 }
 </style>
