@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between w-[80% m-auto relative">
+  <div class="w-[80%] m-auto relative">
     <!-- بخش ثابت (بالا سمت چپ) -->
     <div class="relative flex flex-col section-fixed">
       <div id="blur-2"></div>
@@ -23,6 +23,7 @@
         </button>
       </div>
     </div>
+
     <!-- کارت‌ها -->
     <div class="cards-container" ref="cardsContainer">
       <div
@@ -127,6 +128,7 @@ button {
 
 .cards-container {
   width: max-content;
+  height: 95vh; /* قفل کردن کل بخش کارت‌ها */
   display: flex;
   flex-direction: column;
   justify-content: center;
