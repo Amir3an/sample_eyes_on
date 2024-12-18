@@ -25,7 +25,10 @@
     </div>
 
     <!-- کارت‌ها -->
-    <div class="flex flex-col gap-8 cards-container" ref="cardsContainer">
+    <div
+      class="relative flex flex-col gap-8 cards-container"
+      ref="cardsContainer"
+    >
       <div
         v-for="(card, index) in cards"
         :key="index"
@@ -152,9 +155,11 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   gap: 2rem;
+  position: relative;
 }
 
 .card {
+  position: absolute; /* موقعیت کارت‌ها ثابت می‌شود */
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
