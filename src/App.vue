@@ -18,7 +18,7 @@
     <eyseOnCnt />
   </section>
   <section>
-    <faQsCnt />
+    <faQsCnt class="observe-section" />
   </section>
   <section id="contactUs" class="mt-[15%] observe-section">
     <contactUs />
