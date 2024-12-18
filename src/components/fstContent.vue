@@ -25,10 +25,7 @@
     </div>
 
     <!-- کارت‌ها -->
-    <div
-      class="relative flex flex-col gap-8 cards-container"
-      ref="cardsContainer"
-    >
+    <div class="flex flex-col gap-8 cards-container" ref="cardsContainer">
       <div
         v-for="(card, index) in cards"
         :key="index"
@@ -105,43 +102,19 @@ export default {
       // انیمیشن دوتایی
       cardGroups.forEach((group, index) => {
         gsap.fromTo(
-          group[0],
-          { opacity: 0, y: 50 }, // حالت اولیه کارت اول
+          group,
+          { opacity: 0, y: 50 }, // حالت اولیه
           {
             opacity: 1,
             y: 0,
             duration: 0.5,
+            stagger: 0.2, // تاخیر بین کارت‌های هر گروه
             scrollTrigger: {
               trigger: group[0], // اولین کارت گروه به عنوان تریگر
               start: "top 75%", // شروع انیمیشن
               end: "top 25%", // پایان انیمیشن
               toggleActions: "play reverse play reverse",
-              markers: false,
-            },
-            onComplete: () => {
-              // پس از کامل شدن انیمیشن، کارت بعدی نمایش داده می‌شود
-              gsap.to(group[1], {
-                opacity: 1,
-                y: 0,
-                duration: 0.5,
-              });
-            },
-          }
-        );
-
-        gsap.fromTo(
-          group[1],
-          { opacity: 0, y: 50 }, // حالت اولیه کارت دوم
-          {
-            opacity: 0,
-            y: 50,
-            duration: 0.5,
-            scrollTrigger: {
-              trigger: group[1], // دومین کارت گروه به عنوان تریگر
-              start: "top 75%",
-              end: "top 25%",
-              toggleActions: "play reverse play reverse",
-              markers: false,
+              markers: false, // برای نمایش نقطه‌ها (برای تست فعال کنید)
             },
           }
         );
@@ -153,7 +126,7 @@ export default {
         trigger: container,
         start: "top bottom",
         end: () => `+=${container.scrollHeight}`,
-        markers: false,
+        markers: false, // فقط برای تست
       });
     },
     resetGroup(group) {
@@ -179,12 +152,9 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   gap: 2rem;
-  position: relative;
 }
 
 .card {
-  position: relative; /* تغییر به relative برای جلوگیری از تداخل انیمیشن‌ها */
-  opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
