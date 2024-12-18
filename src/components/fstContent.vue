@@ -110,14 +110,13 @@ export default {
           {
             opacity: 1,
             y: 0,
-            duration: 1,
+            duration: 0.5,
             stagger: 0.2, // تاخیر بین کارت‌های هر گروه
             scrollTrigger: {
               trigger: group[0], // اولین کارت گروه به عنوان تریگر
               start: "top 75%", // شروع انیمیشن
               end: "top 25%", // پایان انیمیشن
               toggleActions: "play reverse play reverse",
-              onLeaveBack: () => this.resetGroup(group), // محو کردن گروه قبلی
               markers: false, // برای نمایش نقطه‌ها (برای تست فعال کنید)
             },
           }
@@ -130,8 +129,6 @@ export default {
         trigger: container,
         start: "top bottom",
         end: () => `+=${container.scrollHeight}`,
-        onLeave: () => window.scrollTo(0, 0), // بازنشانی اسکرول به بالای صفحه
-        onLeaveBack: () => window.scrollTo(0, container.scrollHeight), // بازنشانی به پایین صفحه
         markers: false, // فقط برای تست
       });
     },
