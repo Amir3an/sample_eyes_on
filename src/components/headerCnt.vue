@@ -9,9 +9,10 @@
     />
 
     <button
-      class="flex items-center justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] border border-[#EEE8A9] text-2xl"
+      class="flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] border border-[#EEE8A9] text-2xl"
     >
-      <span class="w-4 h-4 mr-3 rounded-full bg-[#99DDE5]"></span> open to work
+      <span class="w-4 h-4 mr-3 rounded-full bg-[#99DDE5]"></span>
+      open to work
     </button>
 
     <!-- محتوای اصلی -->
