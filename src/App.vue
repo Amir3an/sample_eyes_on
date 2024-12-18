@@ -8,13 +8,13 @@
   <section class="mt-[15%]">
     <fstContent />
   </section>
-  <section class="mt-[15%]">
+  <section class="mt-[15%] observe-section">
     <secContent />
   </section>
-  <section class="mt-[13%]">
+  <section class="mt-[13%] observe-section">
     <portfolioCnt />
   </section>
-  <section>
+  <section class="observe-section">
     <eyseOnCnt />
   </section>
   <section>
@@ -50,6 +50,30 @@ export default {
     faQsCnt,
     contactUs,
     footerCnt,
+  },
+  mounted() {
+    this.setupIntersectionObserver();
+  },
+  methods: {
+    setupIntersectionObserver() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            } else {
+              entry.target.classList.remove("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.5, // حد آستانه 50٪
+        }
+      );
+
+      const sections = document.querySelectorAll(".observe-section");
+      sections.forEach((section) => observer.observe(section));
+    },
   },
 };
 </script>
@@ -97,6 +121,15 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #3b3b3b;
   border-radius: 1rem;
+}
+
+.observe-section {
+  opacity: 0.6; /* مقدار پیش‌فرض */
+  transition: opacity 1s ease-in-out; /* انتقال نرم */
+}
+
+.observe-section.visible {
+  opacity: 1; /* وقتی در دید کاربر قرار گرفت */
 }
 
 #contactUs {
