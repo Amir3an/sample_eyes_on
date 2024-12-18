@@ -1,7 +1,7 @@
 <template>
-  <div class="w-[80%] m-auto relative">
-    <!-- بخش ثابت (بالا سمت چپ) -->
-    <div class="relative flex flex-col section-fixed">
+  <div class="flex w-[80%] m-auto relative gap-10 items-start">
+    <!-- بخش ثابت (سرویس‌ها) -->
+    <div class="relative flex flex-col section-fixed w-[40%]">
       <div id="blur-2"></div>
       <EyseOnServices class="w-52 h-52 opacity-10" />
       <div class="flex flex-col gap-7 mt-[-1rem]">
@@ -25,11 +25,14 @@
     </div>
 
     <!-- کارت‌ها -->
-    <div class="cards-container" ref="cardsContainer">
+    <div
+      class="flex flex-col gap-8 cards-container w-[60%]"
+      ref="cardsContainer"
+    >
       <div
         v-for="(card, index) in cards"
         :key="index"
-        class="card"
+        class="card opacity-0"
         :ref="`card-${index}`"
       >
         <div id="img" class="w-[594px] h-auto rounded-3xl">
@@ -83,40 +86,34 @@ export default {
   },
   methods: {
     initScrollCards() {
-      const cardsContainer = this.$refs.cardsContainer;
+      const cards = this.cards.map((_, index) => this.$refs[`card-${index}`]);
 
-      // تنظیم انیمیشن برای کارت‌ها
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: cardsContainer,
-            start: "top top",
-            end: "+=300%", // افزایش مدت زمان برای ماندن در بخش
-            scrub: true, // حرکت انیمیشن با اسکرول
-            pin: true, // ثابت نگه‌داشتن بخش
-            anticipatePin: 1,
-          },
-        })
-        .to(".card", {
-          opacity: 0,
-          y: 50,
-          stagger: 1, // کارت‌ها یکی پس از دیگری نمایش داده شوند
-          duration: 1,
-          ease: "power2.out",
-        })
-        .to(".card", {
-          opacity: 1,
-          y: 0,
-          stagger: 1,
-          duration: 1,
-          ease: "power2.out",
-        });
+      // انیمیشن ظاهر شدن کارت‌ها
+      cards.forEach((card, index) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 50 }, // حالت اولیه
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            delay: index * 0.2, // تأخیر بین کارت‌ها
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 75%", // شروع انیمیشن وقتی کارت به 75% صفحه رسید
+              toggleActions: "play none none none", // کنترل حالت انیمیشن
+            },
+          }
+        );
+      });
     },
   },
 };
 </script>
 
 <style scoped>
+/* استایل اصلی */
 div {
   font-family: BarlowRegula;
   color: white;
@@ -127,22 +124,14 @@ button {
 }
 
 .cards-container {
-  width: max-content;
-  height: 95vh; /* قفل کردن کل بخش کارت‌ها */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
 }
 
-#img {
-  position: relative;
-  background: url("../assets/img/eyseOn1.png");
-}
-
 .card {
-  opacity: 0; /* شروع انیمیشن با حالت محو */
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #blur-2 {
@@ -156,5 +145,11 @@ button {
   filter: blur(113px);
   border-radius: 25rem;
   z-index: -9;
+}
+
+#img {
+  position: relative;
+  background: url("../assets/img/eyseOn1.png");
+  background-size: cover;
 }
 </style>
