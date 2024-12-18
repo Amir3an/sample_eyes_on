@@ -32,11 +32,13 @@
         class="card"
         :ref="`card-${index}`"
       >
-        <div
-          class="w-[594px] h-auto px-10 py-8 rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px]"
-        >
-          <h2 class="text-2xl font-bold">{{ card.title }}</h2>
-          <p class="text-xl mt-4">{{ card.description }}</p>
+        <div id="img" class="w-[594px] h-auto rounded-3xl">
+          <div
+            class="w-[594px] h-auto px-10 py-8 rounded-3xl bg-[#70F9E01A] backdrop-blur-[21px]"
+          >
+            <h2 class="text-2xl font-bold">{{ card.title }}</h2>
+            <p class="text-xl mt-4">{{ card.description }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -136,6 +138,11 @@ button {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+}
+
+#img {
+  position: relative;
+  background: url("../assets/img/eyseOn1.png");
 }
 
 .card {
