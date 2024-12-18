@@ -20,7 +20,7 @@
   <section>
     <faQsCnt />
   </section>
-  <section id="contactUs" class="mt-[15%]">
+  <section id="contactUs" class="mt-[15%] observe-section">
     <contactUs />
   </section>
   <footer>
