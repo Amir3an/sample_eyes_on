@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[80%] m-auto relative">
+  <div class="flex justify-between w-[80% m-auto relative">
     <!-- بخش ثابت (بالا سمت چپ) -->
     <div class="relative flex flex-col section-fixed">
       <div id="blur-2"></div>
@@ -124,12 +124,6 @@ div {
 
 button {
   border: 1px solid #f1edba;
-}
-
-.section-fixed {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .cards-container {
