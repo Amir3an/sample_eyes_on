@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-[80%] m-auto relative gap-10 items-start">
+  <div class="flex w-[80%] m-auto relative justify-between items-start">
     <!-- بخش ثابت (سرویس‌ها) -->
     <div class="relative flex flex-col section-fixed w-[40%]">
       <div id="blur-2"></div>
@@ -25,10 +25,7 @@
     </div>
 
     <!-- کارت‌ها -->
-    <div
-      class="flex flex-col gap-8 cards-container w-[60%]"
-      ref="cardsContainer"
-    >
+    <div class="flex flex-col gap-8 cards-container" ref="cardsContainer">
       <div
         v-for="(card, index) in cards"
         :key="index"
