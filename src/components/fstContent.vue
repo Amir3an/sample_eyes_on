@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between w-[80%] m-auto relative items-start">
+  <div class="flex w-[80%] m-auto relative gap-10 items-start">
     <!-- بخش ثابت (سرویس‌ها) -->
     <div class="relative flex flex-col section-fixed w-[40%]">
       <div id="blur-2"></div>
@@ -25,7 +25,10 @@
     </div>
 
     <!-- کارت‌ها -->
-    <div class="flex flex-col gap-8 cards-container" ref="cardsContainer">
+    <div
+      class="flex flex-col gap-8 cards-container w-[60%]"
+      ref="cardsContainer"
+    >
       <div
         v-for="(card, index) in cards"
         :key="index"
@@ -75,6 +78,14 @@ export default {
           description: "Explore 3D animation benefits.",
         },
         { title: "Custom Design", description: "Tailored design solutions." },
+        {
+          title: "Visual Effects",
+          description: "High-quality visual effects.",
+        },
+        {
+          title: "Brand Animation",
+          description: "Bring your brand to life with animation.",
+        },
       ],
     };
   },
@@ -84,27 +95,48 @@ export default {
   methods: {
     initScrollCards() {
       const cards = this.cards.map((_, index) => this.$refs[`card-${index}`]);
+      const cardGroups = [];
 
-      cards.forEach((card, index) => {
-        // تنظیم انیمیشن ظاهر شدن و محو شدن
+      // گروه‌بندی کارت‌ها دوتایی
+      for (let i = 0; i < cards.length; i += 2) {
+        cardGroups.push(cards.slice(i, i + 2));
+      }
+
+      // انیمیشن دوتایی
+      cardGroups.forEach((group, index) => {
         gsap.fromTo(
-          card,
+          group,
           { opacity: 0, y: 50 }, // حالت اولیه
           {
             opacity: 1,
             y: 0,
-            duration: 0.8,
-            ease: "power2.out",
+            duration: 1,
+            stagger: 0.2, // تاخیر بین کارت‌های هر گروه
             scrollTrigger: {
-              trigger: card,
-              start: "top 75%", // شروع انیمیشن وقتی کارت به 75% صفحه رسید
-              end: "top 25%", // پایان انیمیشن وقتی کارت به 25% صفحه رسید
-              toggleActions: "play reverse play reverse", // فعال شدن در هر دو جهت
+              trigger: group[0], // اولین کارت گروه به عنوان تریگر
+              start: "top 75%", // شروع انیمیشن
+              end: "top 25%", // پایان انیمیشن
+              toggleActions: "play reverse play reverse",
+              onLeaveBack: () => this.resetGroup(group), // محو کردن گروه قبلی
               markers: false, // برای نمایش نقطه‌ها (برای تست فعال کنید)
             },
           }
         );
       });
+
+      // برای حالت بی‌نهایت اسکرول
+      const container = this.$refs.cardsContainer;
+      ScrollTrigger.create({
+        trigger: container,
+        start: "top bottom",
+        end: () => `+=${container.scrollHeight}`,
+        onLeave: () => window.scrollTo(0, 0), // بازنشانی اسکرول به بالای صفحه
+        onLeaveBack: () => window.scrollTo(0, container.scrollHeight), // بازنشانی به پایین صفحه
+        markers: false, // فقط برای تست
+      });
+    },
+    resetGroup(group) {
+      gsap.to(group, { opacity: 0, y: 50, duration: 0.5 });
     },
   },
 };
