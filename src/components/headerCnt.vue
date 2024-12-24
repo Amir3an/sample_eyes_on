@@ -185,11 +185,11 @@ export default {
   100% {
     border-image-source: conic-gradient(
       from 360deg,
-      rgba(0, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 0, 0.8),
-      rgba(0, 0, 255, 0.8),
       rgba(255, 0, 0, 0.8),
+      rgba(255, 255, 0, 0.8),
+      rgba(0, 255, 0, 0.8),
+      rgba(0, 255, 255, 0.8),
       rgba(0, 0, 255, 0.8),
       rgba(255, 0, 255, 0.8),
       rgba(255, 255, 255, 0.8)
