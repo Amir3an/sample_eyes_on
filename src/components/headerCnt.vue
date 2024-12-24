@@ -7,9 +7,8 @@
       src="../assets/img/2.png"
       alt="Background"
     />
-
     <button
-      class="flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] border border-[#EEE8A9] text-2xl"
+      class="gradient-border-button flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] border border-[#EEE8A9] text-2xl relative overflow-hidden"
     >
       <span class="w-4 h-4 mr-3 rounded-full bg-[#99DDE5]"></span>
       open to work
@@ -147,6 +146,40 @@ export default {
 #cnt.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.gradient-border-button::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  z-index: -1;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #ffeb00,
+    #47ff00,
+    #00ffee,
+    #2d5aff,
+    #8000ff,
+    #ff0088
+  );
+  border-radius: 36px; /* تطابق با گوشه‌های دکمه */
+}
+
+.gradient-border-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #061836b2; /* رنگ اصلی دکمه */
+  border-radius: 32px; /* شعاع گوشه‌های دکمه */
+  z-index: -1;
 }
 
 /* استایل‌های فونت و متن */
