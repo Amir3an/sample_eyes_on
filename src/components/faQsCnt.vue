@@ -29,14 +29,16 @@
         >
           <span>{{ index + 1 }}) {{ item.question }}</span>
           <span
-            class="relative flex items-center justify-center w-8 h-8 rounded-full text-center border border-[#EEE8A9] bg-[#71C3D033] group-open:transition-colors"
+            class="relative flex items-center justify-center w-8 h-8 rounded-full text-center border border-[#EEE8A9] bg-[#71C3D033]"
+            :class="{ 'rotate-45': item.open, 'rotate-0': !item.open }"
           >
             <!-- علامت پلاس -->
             <span
               class="absolute w-4 h-[3px] rounded-xl bg-[#EEE8A9] transition-transform"
             ></span>
             <span
-              class="absolute h-4 w-[3px] rounded-xl bg-[#EEE8A9] transition-opacity group-open:opacity-0"
+              class="absolute h-4 w-[3px] rounded-xl bg-[#EEE8A9] transition-opacity"
+              :class="{ 'opacity-0': item.open, 'opacity-100': !item.open }"
             ></span>
           </span>
         </summary>
@@ -59,26 +61,31 @@ export default {
           question: "What is SEO, and why is it important?",
           answer:
             "SEO is best described as Search Engine Optimization; it's the process of optimizing your website to rank higher in the search engine result pages, which will make the website more visible for prospective customers. That is important because with increased visibility comes increased traffic, which may further lead to more conversions and business growth. SEO is important because it helps drive organic traffic to your site, increasing visibility and conversions...",
+          open: false,
         },
         {
           question: "How does SEO help my website?",
           answer:
             "SEO is important because it helps drive organic traffic to your site, increasing visibility and conversions...",
+          open: false,
         },
         {
           question: "What are the key elements of SEO?",
           answer:
             "Key elements include keyword research, on-page optimization, backlinks, and content quality...",
+          open: false,
         },
         {
           question: "How long does it take to see SEO results?",
           answer:
             "SEO results typically take time and can be seen over a period of 3-6 months depending on efforts...",
+          open: false,
         },
         {
           question: "How long does it take to see SEO results?",
           answer:
             "SEO results typically take time and can be seen over a period of 3-6 months depending on efforts...",
+          open: false,
         },
       ],
     };
@@ -101,6 +108,10 @@ export default {
           content.style.height = "0"; // بسته شدن
         }, 1);
       }
+      const index = this.questions.findIndex(
+        (q) => q.question === event.target.querySelector("summary").innerText
+      );
+      this.questions[index].open = !this.questions[index].open;
     },
   },
 };
