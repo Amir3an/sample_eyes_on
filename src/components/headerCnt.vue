@@ -8,7 +8,7 @@
       alt="Background"
     />
     <button
-      class="gradient-border-button flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] border border-[#EEE8A9] text-2xl relative overflow-hidden"
+      class="gradient-border-button flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] border border-transparent text-2xl relative overflow-hidden"
     >
       <span class="w-4 h-4 mr-3 rounded-full bg-[#99DDE5]"></span>
       open to work
@@ -148,26 +148,32 @@ export default {
   transform: translateY(0);
 }
 
+.gradient-border-button {
+  position: relative;
+}
+
 .gradient-border-button::before {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
   z-index: -1;
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #ffeb00,
-    #47ff00,
-    #00ffee,
-    #2d5aff,
-    #8000ff,
-    #ff0088
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 0, 0, 0.8),
+    rgba(255, 255, 0, 0.8),
+    rgba(0, 255, 0, 0.8),
+    rgba(0, 255, 255, 0.8),
+    rgba(0, 0, 255, 0.8),
+    rgba(255, 0, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
   );
-  border-radius: 36px; /* تطابق با گوشه‌های دکمه */
+  border-radius: 36px;
+  animation: rotate-border 3s linear infinite;
+  filter: blur(2px) brightness(1.5); /* ایجاد جلوه نورانی */
 }
 
 .gradient-border-button::after {
@@ -177,11 +183,19 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #061836b2; /* رنگ اصلی دکمه */
-  border-radius: 32px; /* شعاع گوشه‌های دکمه */
+  background: #061836b2;
+  border-radius: 32px;
   z-index: -1;
 }
 
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* استایل‌های فونت و متن */
 /* div {
   font-family: BanglaSanga;
