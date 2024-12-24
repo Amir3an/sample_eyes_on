@@ -164,7 +164,7 @@ export default {
     )
     1;
   border-radius: 32px; /* گوشه‌های گرد */
-  animation: rotate-border infinite 2s linear infinite;
+  animation: rotate-border 10s linear infinite;
   background-clip: padding-box; /* جلوه داخلی دکمه */
 }
 
