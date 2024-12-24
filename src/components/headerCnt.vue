@@ -7,8 +7,9 @@
       src="../assets/img/2.png"
       alt="Background"
     />
+
     <button
-      class="gradient-border-button flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] text-white rounded-[32px] bg-[#061836B2] text-2xl"
+      class="flex items-center cursor-pointer justify-center w-[224px] h-[59px] m-auto mt-[-13.5rem] z-50 text-white rounded-[32px] bg-[#061836B2] border border-[#EEE8A9] text-2xl"
     >
       <span class="w-4 h-4 mr-3 rounded-full bg-[#99DDE5]"></span>
       open to work
@@ -148,54 +149,6 @@ export default {
   transform: translateY(0);
 }
 
-.gradient-border-button {
-  position: relative;
-  border: 4px solid transparent; /* پایه‌ی شفاف */
-  border-image: conic-gradient(
-      from 0deg,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 255, 0, 0.8),
-      rgba(0, 255, 0, 0.8),
-      rgba(0, 255, 255, 0.8),
-      rgba(0, 0, 255, 0.8),
-      rgba(255, 0, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    )
-    1;
-  border-radius: 32px; /* گوشه‌های گرد */
-  animation: rotate-border 10s linear infinite;
-  background-clip: padding-box; /* جلوه داخلی دکمه */
-}
-
-@keyframes rotate-border {
-  0% {
-    border-image-source: conic-gradient(
-      from 0deg,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 255, 0, 0.8),
-      rgba(0, 255, 0, 0.8),
-      rgba(0, 255, 255, 0.8),
-      rgba(0, 0, 255, 0.8),
-      rgba(255, 0, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    );
-  }
-  100% {
-    border-image-source: conic-gradient(
-      from 360deg,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 255, 0, 0.8),
-      rgba(0, 255, 0, 0.8),
-      rgba(0, 255, 255, 0.8),
-      rgba(0, 0, 255, 0.8),
-      rgba(255, 0, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    );
-  }
-}
 /* استایل‌های فونت و متن */
 /* div {
   font-family: BanglaSanga;
